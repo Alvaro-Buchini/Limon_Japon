@@ -1,0 +1,73 @@
+// estilo footer //
+footer{
+    background-color: $color_gris;
+    padding: 1rem;
+    .conteiner__footer{
+        color:#ffffff;
+        font-family: $titulos;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        line-height: 1rem;
+        padding: 1rem 2rem 0rem 2rem;
+        ul{
+            margin: 0rem;
+            padding: 0rem;
+            li{
+                list-style-type: none;
+                font-size: 0.9rem;
+                line-height: 1.8rem;
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .footerSecciones{
+            padding: 1rem 4rem;
+        }
+        .footerContacto{
+            padding: 1rem 3rem 2rem 3rem;
+            border-left: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+            .detallesUbicación{
+                padding-left: 1.8rem;
+            }
+            li img{
+                width: 1.5rem;
+            }
+        }
+        .footerRedes{
+            padding: 1rem 2rem 2rem 3rem;
+            img{
+                width: 2.5rem;
+            }
+            input{
+                width: 12rem;
+                padding-left: 0.5rem;
+            }
+            .botonSuscripcion{
+                width: 5rem;
+                padding-right: 0.5rem;
+                font-size: 0.8rem;
+            }
+            .tarjeta__naranja{
+                background-color: #ffffff;
+                border-radius: 5%;
+            }
+        }
+    }
+    .copyright{
+        p{
+            padding: 2rem 2rem 0rem 6rem;
+            font-family: $titulos;
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+    }
+}

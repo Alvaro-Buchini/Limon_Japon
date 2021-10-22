@@ -1,0 +1,1046 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0px;
+  z-index: 5 !important;
+  border-bottom: 1px solid #000000;
+}
+
+header nav {
+  background-color: #ffffff !important;
+}
+
+header nav.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logoNavbar img {
+  margin-left: 2vw;
+  width: 10rem;
+}
+
+header nav .botonHamburguesa {
+  margin-right: 1rem;
+  padding: 0rem 3rem;
+  background-color: #f8f0df;
+}
+
+header nav ul {
+  padding: 0rem 1rem;
+}
+
+header nav ul li {
+  padding: 0rem 1rem;
+  border-left: 1px solid #9d9d9d;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header nav ul li:hover {
+  background-color: #9d9d9d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav ul li a:hover {
+  color: #ffffff !important;
+}
+
+header nav ul .menuNavbar__contacto {
+  border-right: 1px solid #9d9d9d;
+}
+
+header nav ul .boton__carrito {
+  border: none;
+  margin: 0rem 0.5rem;
+  opacity: 0.8;
+}
+
+header nav ul .boton__carrito:hover {
+  background-color: #ffffff;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  opacity: 1;
+}
+
+header nav ul .boton__carrito img {
+  width: 2.2rem;
+}
+
+body {
+  background-color: #fefbf3;
+}
+
+main {
+  background-image: url(/media/img/fondoMosaico.png);
+  background-repeat: repeat;
+}
+
+main .carrusel img {
+  width: 100%;
+}
+
+main .porque__lj {
+  width: 100%;
+  background-image: url(/media/img/fondo1.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 2rem auto;
+  padding: 3rem;
+}
+
+main .porque__lj article h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  word-spacing: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+main .porque__lj article p {
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  word-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+main .porque__lj article p span {
+  font-weight: 700;
+}
+
+main .seccionProductos {
+  width: 95%;
+  margin: 2rem auto;
+  padding: 3rem;
+  background-color: #f8f0df;
+  background-image: url(/media/img/fondo2.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+main .seccionProductos .productos h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main .seccionProductos .productos p {
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  font-size: 1.2rem;
+  word-spacing: 0.3rem;
+  font-weight: 500;
+}
+
+main .seccionProductos .conteinerCategorias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .seccionProductos .conteinerCategorias .tarjeta_producto {
+  width: 18rem;
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+}
+
+main .seccionProductos .conteinerCategorias h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+main .seccionProductos .conteinerCategorias h3:hover {
+  background-color: #9d9d9d;
+  color: #ffffff;
+}
+
+main .seccionProductos .conteinerCategorias li {
+  text-align: left;
+  font-family: "Bodoni Moda", serif;
+}
+
+main .seccionProductos .conteinerCategorias li:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#9d9d9d), to(#ffffff));
+  background-image: linear-gradient(to left, #9d9d9d, #ffffff);
+}
+
+main .comoComprar_titulo {
+  margin: 1rem 2rem 0rem 2rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-size: 2.3rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  background-color: #9d9d9d;
+  opacity: 0.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+main .comoComprar {
+  padding: 0rem 1rem 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .comoComprar .comoComprar__bloque {
+  border: 1px #ffffff solid;
+  background-color: #ffffff;
+  width: 20%;
+  height: 58vh;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+main .comoComprar .comoComprar__bloque:hover {
+  opacity: 0.8;
+  border-right: 1px #9d9d9d solid;
+  border-bottom: 1px #9d9d9d solid;
+  background-color: #fefbf3;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .comoComprar .comoComprar__bloque img {
+  width: 60px;
+  margin: 1rem;
+}
+
+main .comoComprar .comoComprar__bloque p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+main .comoComprar .comoComprar__bloque span {
+  font-weight: bolder;
+}
+
+main .botonWhatsapp img {
+  width: 70px;
+  position: fixed;
+  top: 75%;
+  right: -13px;
+  z-index: 3 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+main .botonWhatsapp img:hover {
+  right: 0px;
+  opacity: 1;
+}
+
+main .botonFlechaTop img {
+  width: 140px;
+  position: fixed;
+  top: 74%;
+  left: -85px;
+  z-index: 3 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+main .botonFlechaTop img:hover {
+  left: -70px;
+  opacity: 1;
+}
+
+main .botonSoporte img {
+  width: 140px;
+  position: fixed;
+  top: 86%;
+  right: -85px;
+  z-index: 3 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+main .botonSoporte img:hover {
+  right: -72px;
+  opacity: 1;
+}
+
+main .offcanvas__carrito {
+  width: 35%;
+}
+
+main .offcanvas__carrito .header__carrito {
+  background-color: #9d9d9d;
+  color: #ffffff;
+}
+
+main .offcanvas__carrito .header__carrito .offcanvas-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+main .offcanvas__carrito .body__carrito {
+  background-color: #fefbf3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .offcanvas__carrito .body__carrito .misProductos__carrito {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  border-bottom: 1px #9d9d9d solid;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito {
+  padding: 1rem 0rem;
+  border-bottom: 1px #9d9d9d solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito img {
+  width: 80px;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .detalles__productos {
+  width: 18rem;
+  padding: 0rem 1rem;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .detalles__productos span {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .detalles__productos p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .detalles__productos label {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .detalles__productos input {
+  width: 3rem;
+  padding-left: 0.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .boton__eliminarProducto {
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .boton__eliminarProducto button {
+  border: none;
+  opacity: 0.8;
+  background-color: #fefbf3;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .boton__eliminarProducto button:hover {
+  background-color: #fefbf3;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  opacity: 1;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .boton__eliminarProducto button img {
+  width: 2rem;
+}
+
+main .offcanvas__carrito .body__carrito .producto__carrito .boton__eliminarProducto .precio__producto {
+  font-size: 1rem;
+}
+
+main .offcanvas__carrito .body__carrito .total__carrito {
+  padding-top: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 0.8rem;
+}
+
+main .offcanvas__carrito .body__carrito .total__carrito span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+main .offcanvas__carrito .body__carrito .boton_continuar {
+  padding: 0.5rem;
+  border: 1px #ffffff solid;
+  background-color: #9d9d9d;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+main .offcanvas__carrito .body__carrito .boton_continuar:hover {
+  opacity: 1;
+  border: 1px #9d9d9d solid;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__nosotros {
+  background-color: #fefbf3;
+}
+
+.main__nosotros .nosotros h1 {
+  padding: 2rem 3rem 0rem 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+.main__nosotros section .conteinerNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0rem 3rem;
+  padding-bottom: 3rem;
+}
+
+.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoNosotros {
+  width: 100%;
+  border: 1px #9d9d9d solid;
+}
+
+.main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
+  height: 55vh;
+  width: 67vw;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
+  word-spacing: 0.3rem;
+  padding: 3rem;
+  margin: 3rem 0rem 0rem 0rem;
+  background-image: url(/media/img/fondo2.jpg);
+  background-size: cover;
+  border: 1px #9d9d9d solid;
+}
+
+.main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros span {
+  font-weight: 700;
+}
+
+.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid img {
+  height: 55vh;
+  margin: 3rem 0rem 0rem 0rem;
+  border: 1px #9d9d9d solid;
+}
+
+.main__productos {
+  background-image: url(/media/img/fondoMosaico.png);
+  background-repeat: repeat;
+}
+
+.main__productos .banner__catalogo a img {
+  width: 100%;
+  border-bottom: 1px #9d9d9d solid;
+}
+
+.main__productos h1 {
+  margin: 1rem 3rem 0rem 3rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-size: 2.3rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  background-color: #9d9d9d;
+  opacity: 0.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main__productos .comoComprar {
+  padding: 0rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main__productos .comoComprar .comoComprar__bloque {
+  border: 1px #ffffff solid;
+  background-color: #ffffff;
+  width: 20%;
+  height: 58vh;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.main__productos .comoComprar .comoComprar__bloque:hover {
+  opacity: 0.8;
+  border-right: 1px #9d9d9d solid;
+  border-bottom: 1px #9d9d9d solid;
+  background-color: #fefbf3;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__productos .comoComprar .comoComprar__bloque img {
+  width: 60px;
+  margin: 1rem;
+}
+
+.main__productos .comoComprar .comoComprar__bloque p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.main__productos .comoComprar .comoComprar__bloque span {
+  font-weight: bolder;
+}
+
+.main__productos .conteiner__productos {
+  margin: 2rem 3rem 0rem 3rem;
+  padding-bottom: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 1rem;
+      grid-template-areas: "menuProductos categorias";
+}
+
+.main__productos .conteiner__productos .menuProductos {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: menuProductos;
+  height: 70vh;
+  padding: 1rem 1rem;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.main__productos .conteiner__productos .menuProductos .menuProductos__ul {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 3rem;
+  margin-left: -2rem;
+}
+
+.main__productos .conteiner__productos .menuProductos .menuProductos__ul a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main__productos .conteiner__productos .menuProductos .menuProductos__ul a:hover {
+  color: #ffffff;
+  background-color: #9d9d9d;
+}
+
+.main__productos .conteiner__productos .menuProductos .menuProductos__ul a .menuProductos__li {
+  padding-left: 1rem;
+  list-style-type: none;
+  border-bottom: 1px #9d9d9d solid;
+}
+
+.main__productos .conteiner__productos .menuProductos .menuProductos__ul a .menuProductos__li:hover {
+  background-color: #9d9d9d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias {
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: categorias;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.7rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: #ffffff;
+  background-color: #9d9d9d;
+  opacity: 0.7;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas--yoga {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  border: 1px #9d9d9d solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 14rem;
+  opacity: 0.8;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto img {
+  width: 100%;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
+  height: 14vh;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.1rem;
+  padding: 0.8rem 0.5rem 0rem 0.5rem;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto p {
+  font-size: 0.8rem;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto p {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 0rem 0.5rem;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad label {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 0.9rem;
+  margin: 0.5rem;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad input {
+  width: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  padding-left: 0.5rem;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad select {
+  width: 100%;
+  height: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .boton__agregar, .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto main .seccionProductos .conteinerCategorias button, main .seccionProductos .conteinerCategorias .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #9d9d9d;
+  border: 1px #ffffff solid;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .boton__agregar:hover, .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto main .seccionProductos .conteinerCategorias button:hover, main .seccionProductos .conteinerCategorias .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto button:hover {
+  opacity: 1;
+  border: 1px #9d9d9d solid;
+}
+
+.mainContacto {
+  background-color: #fefbf3;
+  background-image: url(/media/img/fondo2.jpg);
+  background-size: cover;
+}
+
+.mainContacto section .mainContacto__contactanos {
+  padding: 3rem;
+}
+
+.mainContacto section .mainContacto__contactanos h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+
+.mainContacto section .mainContacto__contactanos p {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  word-spacing: 0.3rem;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset {
+  margin: 5vh auto;
+  padding: 5vh auto;
+  text-align: center;
+  border: none;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset label {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset input {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .inputRadio {
+  font-family: "Josefin Sans", sans-serif;
+  word-spacing: 1rem;
+  font-size: 1rem;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .motivoConsulta {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .textAreaFormulario {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .borrarEnviar {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+
+.main__ayuda h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.7rem;
+  background-color: #9d9d9d;
+  color: #ffffff;
+  margin: 0rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.main__ayuda .conteiner__ayuda {
+  padding: 1rem 3rem 3rem 3rem;
+  opacity: 0.8;
+}
+
+.main__ayuda .conteiner__ayuda .boton__pregunta {
+  width: 100%;
+  background-color: #f8f0df;
+  text-align: left;
+  color: #000000;
+  border: none;
+  padding: 1rem;
+}
+
+.main__ayuda .conteiner__ayuda .boton__pregunta--dif {
+  background-color: #fefbf3;
+}
+
+.main__ayuda .conteiner__ayuda .boton__pregunta:hover {
+  background-color: #9d9d9d;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda {
+  padding-top: 1.5rem;
+  z-index: 1;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem 0rem 0rem 0rem;
+  font-weight: 600;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda p {
+  padding-left: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+}
+
+.main__botik {
+  background-image: url(/media/img/fondoMosaico.png);
+  background-repeat: repeat;
+}
+
+.main__botik .botik__h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font: 0.5rem;
+  margin: 0rem;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+.main__botik .botik__p {
+  font-family: "Bodoni Moda", serif;
+  padding: 1rem 2rem 2rem 2rem;
+  margin: 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  word-spacing: 0.2rem;
+}
+
+footer {
+  background-color: #9d9d9d;
+  padding: 1rem;
+}
+
+footer .conteiner__footer {
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  line-height: 1rem;
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+footer .conteiner__footer ul {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+footer .conteiner__footer ul li {
+  list-style-type: none;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+}
+
+footer .conteiner__footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .conteiner__footer ul li a:hover {
+  color: #000000;
+}
+
+footer .conteiner__footer .footerSecciones {
+  padding: 1rem 4rem;
+}
+
+footer .conteiner__footer .footerContacto {
+  padding: 1rem 3rem 2rem 3rem;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+footer .conteiner__footer .footerContacto .detallesUbicación {
+  padding-left: 1.8rem;
+}
+
+footer .conteiner__footer .footerContacto li img {
+  width: 1.5rem;
+}
+
+footer .conteiner__footer .footerRedes {
+  padding: 1rem 2rem 2rem 3rem;
+}
+
+footer .conteiner__footer .footerRedes img {
+  width: 2.5rem;
+}
+
+footer .conteiner__footer .footerRedes input {
+  width: 12rem;
+  padding-left: 0.5rem;
+}
+
+footer .conteiner__footer .footerRedes .botonSuscripcion {
+  width: 5rem;
+  padding-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+footer .conteiner__footer .footerRedes .tarjeta__naranja {
+  background-color: #ffffff;
+  border-radius: 5%;
+}
+
+footer .copyright p {
+  padding: 2rem 2rem 0rem 6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #ffffff;
+}

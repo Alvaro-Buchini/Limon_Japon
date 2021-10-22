@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Limón Japón te ofrece toda la ayuda y soporte que necesites. Si queres sacarte alguna duda te invitamos a leer las preguntas frecuentes para que tu experiancia de compra sea única">
+    <meta name="keywords"
+        content="Limon, Japon, Limon japon, compras, envios, pagos, retiro, contacto, cambios, devoluciones, ayuda, soporte escribinos, preguntas, dudas, redes, redsocial, seguinos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=Josefin+Sans:wght@100;200;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/media/favicon.png">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Limón Japón | Ayuda y Soporte</title>
+</head>
+
+<body>
+    <!--inicio de header-->
+    <header id="#top">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light conteiner">
+            <div class="logoNavbar">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/media/img/logo3.png" alt="Logo Limón Japón">
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menuNavbar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="botikpuro.html">BOTI-K PURO</a>
+                        </li>
+                        <li class="menuNavbar__contacto">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="boton__carrito">
+                            <button class="boton__carrito" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <img src="/media/img/carrito2.png" alt="Icono Carrito">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--fin del header-->
+    <!--inicio del main-->
+    <main class="main__ayuda">
+        <!--inicio offcanvas carrito-->
+        <div class="offcanvas offcanvas-end offcanvas__carrito" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header header__carrito">
+                <p class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                    MI CARRITO
+                </p>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body body__carrito">
+                <div class="misProductos__carrito">
+                    <p>Mis productos:</p>
+                </div>
+                <div class="producto__carrito">
+                    <div>
+                        <img src="/media/img/mercado/cosmetica4.png" alt="Img Producto 1">
+                    </div>
+                    <div class="detalles__productos">
+                        <p><span>Kit Octogonal</span></p>
+                        <p>1 Ungüento Balsámico / 1 Jabón 100% Vegetal / 1 Bálsamo Labial.</p>
+                        <label for="tentacles">Cantidad:</label>
+                        <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="1">
+                    </div>
+                    <div class="boton__eliminarProducto">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">
+                            <img src="/media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        </button>
+                        <p class="precio__producto"><strong>$ 1390,00</strong></p>
+                    </div>
+                </div>
+                <div class="producto__carrito">
+                    <div>
+                        <img src="/media/img/mercado/sahumerios7.png" alt="Img Producto 2">
+                    </div>
+                    <div class="detalles__productos">
+                        <p><span>Carbones Defumación Sagrada Madre</span></p>
+                        <p>(Caja x 4 un.) / <strong>Variedad: 7 Poderes</strong></p>
+                        <label for="tentacles">Cantidad:</label>
+                        <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="2">
+                    </div>
+                    <div class="boton__eliminarProducto">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">
+                            <img src="/media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        </button>
+                        <p class="precio__producto"><strong>$ 760,00</strong></p>
+                    </div>
+                </div>
+                <div class="total__carrito">
+                    <p><strong>Valor de la compra: $ 2150,00</strong></p>
+                    <p>Descuentos: $ 0,00</p>
+                    <p>Sub-total: $ 2150,00</p>
+                    <p>Envío: (A definir)</p>
+                    <p><span>TOTAL: $ 2150,00 + Envío</span></p>
+                </div>
+                <button class="boton_continuar">Continuar ></button>
+            </div>
+        </div>
+        <!--fin offcanvas carrito-->
+        <h1>AYUDA Y SOPORTE</h1>
+        <div class="conteiner__ayuda">
+            <div class="accordion acordeon__ayuda" id="accordionExample">
+                <h2>COMPRAS</h2>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Es necesario registrarme para comprar?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>No, registrarse no es necesario, solamente tenés que elegir lo que quieras y agregarlo al
+                                carrito.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="collapsed boton__pregunta boton__pregunta--dif" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            ¿Cómo hago para comprar?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Agregá al carrito todo lo que quieras, luego ingresando al mismo desde el botón superios
+                                derecho (<img src="/media/img/carrito2.png" width="25px" alt="Icono Carrito">) completas
+                                los datos de facturación, seleccionas la forma de pago y envío o retiro y ¡Listo!. Vas a
+                                recibir un mail con toda la información de facturación y número de pedido para realizar
+                                el seguimiento del mismo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Puedo comprar desde mi celular?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Sí, podés comprar en tu celular desde cualquier navegador.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="collapsed boton__pregunta boton__pregunta--dif" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            ¿Existe un mínimo de compra?
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Un mínimo no, podes comprar máximo 10 ítems de la misma varidad de cada producto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingFive">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Tengo problemas con mi pedido ¿dónde puedo consultar?
+                        </button>
+                    </h3>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Tenés varios medios de contacto:</p>
+                            <P>Desde nuestra Web, completando el formulario en la sección de <a
+                                    href="contacto.html">Contacto</a>.</p>
+                            <P>Desde nuestras redes, por mensaje directo desde nuestro <a
+                                    href="https://www.instagram.com/limonjapon/" target="_blank">Instragram</a> o <a
+                                    href="https://www.facebook.com/limonjapon/?ref=page_internal"
+                                    target="_blank">Facebook</a>.</p>
+                            <P>Desde <a
+                                    href="https://api.whatsapp.com/send?phone=543572675531&fbclid=IwAR3w9dlPIrug47BJMsfwq4L0CAB27TQWI6jcCqQb0X46TpAbvKnZl0uKgPo"
+                                    target="_blank">Whatsapp</a> o llamada al 3572-67-5531 (de L a S: 9 a 12 y 17 a 20).
+                            </p>
+                            <P>Desde nuestro Mail, <a href="mailto:limonjapon@gmail.com">limonjapon@gmail.com</a>.</p>
+                            <P>O presencial, en nuestro local en <a
+                                    href="https://www.google.com/maps?ll=-31.915407,-63.67863&z=14&t=m&hl=es-419&gl=AR&mapclient=embed&q=Esteban+Piacenza+226+Oncativo+C%C3%B3rdoba"
+                                    target="_blank">Esteban Piacenza 226</a>, Oncativo, Córdoba. Atención: L a S: 9 a 12
+                                y 17 a 20.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingSix">
+                        <button class="collapsed boton__pregunta boton__pregunta--dif" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                            aria-controls="collapseSix">
+                            ¿Qué beneficios tiene suscribirme a las novedades?
+                        </button>
+                    </h3>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Al suscribirte, podrás recibir novedades, lanzamientos y promociones exclusivas antes que
+                                nadie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion acordeon__ayuda" id="accordionExample">
+                <h2>PAGOS</h2>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingSeven">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            ¿Cuáles son los medios de pago?
+                        </button>
+                    </h3>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>El pago se puede realizar con tarjeta de crédito y débito, las tarjetas habilitadas son
+                                <strong>Visa, Master Card, American Express y Naranja.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingEight">
+                        <button class="collapsed boton__pregunta boton__pregunta--dif" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                            aria-controls="collapseEight">
+                            ¿Recibo algún comprobante cuando finalizo mi compra?
+                        </button>
+                    </h3>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Sí, recibirás por correo electrónico un recibo con el precio total de tu compra, el
+                                detalle de los productos y el costo del envío. Por favor, conservá este correo
+                                electrónico, ya que es tu prueba de compra y está garantizado que se presentará en caso
+                                de cambio o reembolso. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingNine">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            En mi factura veo el nombre de la empresa Mercado Pago, ¿por qué?
+                        </button>
+                    </h3>
+                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Mercado Pago es nuestro bróker de pago, por lo tanto, la información de la compra
+                                aparecerá en tu factura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion acordeon__ayuda" id="accordionExample">
+                <h2>ENVÍOS</h2>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingTen">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            ¿Cuál es el costo del envío? ¿En cuántos días se entrega?
+                        </button>
+                    </h3>
+                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>El costo de envío se determina al momento de la compra según el código postal.</p>
+                            <p>El envío será gratis en compras mayores a $5.000.</p>
+                            <p>Los plazos de entrega varían entre 5 y 10 días hábiles según la provincia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingEleven">
+                        <button class="collapsed boton__pregunta boton__pregunta--dif" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false"
+                            aria-controls="collapseEleven">
+                            ¿Con que proveedor se realizan los envíos?
+                        </button>
+                    </h3>
+                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Todos los envíos se realizan por Correo Argentino.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingTwelve">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            ¿Puedo darle seguimiento a mi pedido?
+                        </button>
+                    </h3>
+                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Si, con tu número de pedido podés realizar el seguimiento en el siguiente link: <a
+                                    href="https://www.correoargentino.com.ar/formularios/e-commerce"
+                                    target="_blank">https://www.correoargentino.com.ar/formularios/e-commerce</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingThirteen">
+                        <button class="collapsed boton__pregunta boton__pregunta--dif" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false"
+                            aria-controls="collapseThirteen">
+                            ¿Cómo debo retirar mi pedido en una sucursal?
+                        </button>
+                    </h3>
+                    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Debes llevar DNI + número de pedido. El número de pedido lo encontrás en el mail que
+                                recibís al realizar la compra con los datos de la sucursal seleccionada. Si el pedido lo
+                                retira otra persona, debe llevar fotocopia del DNI del titular.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion acordeon__ayuda" id="accordionExample">
+                <h2>CAMBIOS Y DEVOLUCIONES</h2>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingFourteen">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                            ¿Cómo puedo solicitar un cambio o una devolución de producto?
+                        </button>
+                    </h3>
+                    <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Podés hacerlo comunicándote con nosotros vía <a
+                                    href="https://api.whatsapp.com/send?phone=543572675531&fbclid=IwAR3w9dlPIrug47BJMsfwq4L0CAB27TQWI6jcCqQb0X46TpAbvKnZl0uKgPo"
+                                    target="_blank">Whatsapp</a> o llamada al 3572-67-5531.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingFiveteen">
+                        <button class="collapsed boton__pregunta boton__pregunta--dif" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFiveteen" aria-expanded="false"
+                            aria-controls="collapseFiveteen">
+                            ¿Cuál es el periodo permitido para realizar un cambio o devolución de producto?
+                        </button>
+                    </h3>
+                    <div id="collapseFiveteen" class="accordion-collapse collapse" aria-labelledby="headingFiveteen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Tenés 30 días corridos desde la recepción de tu pedido para solicitar un cambio o hacer
+                                la devolución de un producto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item acordeon__pregunta">
+                    <h3 class="accordion-header" id="headingSixteen">
+                        <button class="collapsed boton__pregunta" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                            ¿Cuáles son los motivos para cambio o devolución de producto?
+                        </button>
+                    </h3>
+                    <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Podés pedir el cambio o la devolución del dinero en caso que:</p>
+                            <p>El producto presentó alguna falla o daño en su envase.</p>
+                            <p>El producto recibido es diferente al que solicitaste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botonWhatsapp">
+            <a href="https://api.whatsapp.com/send?phone=543572675531&fbclid=IwAR3w9dlPIrug47BJMsfwq4L0CAB27TQWI6jcCqQb0X46TpAbvKnZl0uKgPo"
+                target="_blank"><img src="./media/img/botonWhatsapp.png" alt="Botón Whatsapp Contacto"></a>
+        </div>
+        <div>
+            <a href="#top" class="botonFlechaTop"><img src="./media/img/botonTop.png" alt="Botón Flecha Top"></a>
+        </div>
+    </main>
+    <!--fin del main-->
+    <!--inicio del footer-->
+    <footer>
+        <div class="conteiner__footer">
+            <div class="footerSecciones">
+                <p><strong>SECCIONES</strong></p>
+                <ul>
+                    <li><a href="#top">Ir al Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="botikpuro.html">Boti-K Puro</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ayuda.html">Ayuda y Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footerContacto">
+                <p><strong>CONTACTO</strong></p>
+                <ul>
+                    <li><img src="media/img/logoTelefono.png" alt="Logo Teléfono"> 03572 67-5531</li>
+                    <li><img src="media/img/logoMail.png" alt="Logo Mail"><a href="mailto:limonjapon@gmail.com">
+                            limonjapon@gmail.com</a></li>
+                    <li><img src="media/img/logoMessenger.png" alt="Logo Messenger"><a
+                            href="https://www.facebook.com/messages/t/101249778272524" target="_blank"> Enviar mensaje</a>
+                    </li>
+                    <li><img src="media/img/logoWhatsapp.png" alt="Logo WhatsApp"><a
+                            href="https://api.whatsapp.com/send?phone=543572675531&fbclid=IwAR3w9dlPIrug47BJMsfwq4L0CAB27TQWI6jcCqQb0X46TpAbvKnZl0uKgPo"
+                            target="_blank"> +54 3572 67-5531</a></li>
+                    <li><img src="media/img/logoUbicacion.png" alt="Logo Ubicación"><a
+                            href="https://www.google.com/maps?ll=-31.915407,-63.67863&z=14&t=m&hl=es-419&gl=AR&mapclient=embed&q=Esteban+Piacenza+226+Oncativo+C%C3%B3rdoba"
+                            target="_blank"> Esteban Piacenza 226</a></li>
+                    <ul class="detallesUbicación">
+                        <li>Oncativo, Córdoba</li>
+                        <li>L a S: 9 a 12 y 17 a 20</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="footerRedes">
+                <p><strong>SEGUINOS EN</strong></p>
+                <a href="https://www.instagram.com/limonjapon/" target="_blank"><img src="media/img/logoInstagram.png"
+                        alt="Logo Instagram" /></a>
+                <a href="https://www.facebook.com/limonjapon/?ref=page_internal" target="_blank"><img
+                        src="media/img/logoFacebook.png" alt="Logo Facebook" /></a>
+                <a href="https://www.youtube.com/channel/UCOrKeoWaHhLT3iX3Zg2G0tQ" target="_blank"><img
+                        src="media/img/logoYoutube.png" alt="Logo YouTube" /></a>
+                <br><br><br>
+                <p><strong>SUSCRIBITE A LAS NOVEDADES</strong></p>
+                <form action="">
+                    <label for="email">Email:</label>
+                    <input type="email" required name="email" placeholder="Ingresa tu email">
+                    <input type="submit" value="Suscribirse" class="botonSuscripcion">
+                </form>
+                <br><br><br>
+                <p><strong>TARJETAS HABILITADAS</strong></p>
+                <img src="/media/img/tarjetaVisa.png" alt="Icono Tarjeta Visa">
+                <img src="/media/img/tarjetaMastercard.png" alt="Icono Tarjeta Mastercard">
+                <img src="/media/img/tarjetaAmex.png" alt="Icono Tarjeta Amex">
+                <img src="/media/img/tarjetaNaranja.png" class="tarjeta__naranja" alt="Icono Tarjeta Naranja">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2021 Limón Japón ©Copyright. Página creada por Alvaro Buchini.</p>
+        </div>
+    </footer>
+    <!--final del footer-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

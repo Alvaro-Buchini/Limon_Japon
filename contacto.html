@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Si tenes alguna duda o coriosidad no te quedes con ella, completa el formulario de contacto o escribinos por nuestras reder">
+    <meta name="keywords"
+        content="Limon, Japon, Limon japon, bienestar, equilibrio, contacto, escribinos, preguntas, dudas, redes, redsocial, seguinos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=Josefin+Sans:wght@100;200;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="shortcut icon" id="favicon" href="/media/favicon.png">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Limón Japón | Contacto</title>
+</head>
+
+<body>
+    <!--inicio de header-->
+    <header id="#top">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light conteiner">
+            <div class="logoNavbar">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/media/img/logo3.png" alt="Logo Limón Japón">
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menuNavbar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link link__propio" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link__propio" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link__propio" href="productos.html">PRODUCTOS</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link__propio" href="botikpuro.html">BOTI-K PURO</a>
+                        </li>
+                        <li class="menuNavbar__contacto">
+                            <a class="nav-link link__propio" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="boton__carrito">
+                            <button class="boton__carrito" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <img src="/media/img/carrito2.png" alt="Icono Carrito">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--fin del header-->
+    <!--inicio del main-->
+    <main class="mainContacto">
+        <!--inicio offcanvas carrito-->
+        <div class="offcanvas offcanvas-end offcanvas__carrito" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header header__carrito">
+                <p class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                    MI CARRITO
+                </p>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body body__carrito">
+                <div class="misProductos__carrito">
+                    <p>Mis productos:</p>
+                </div>
+                <div class="producto__carrito">
+                    <div>
+                        <img src="/media/img/mercado/cosmetica4.png" alt="Img Producto 1">
+                    </div>
+                    <div class="detalles__productos">
+                        <p><span>Kit Octogonal</span></p>
+                        <p>1 Ungüento Balsámico / 1 Jabón 100% Vegetal / 1 Bálsamo Labial.</p>
+                        <label for="tentacles">Cantidad:</label>
+                        <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="1">
+                    </div>
+                    <div class="boton__eliminarProducto">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">
+                            <img src="/media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        </button>
+                        <p class="precio__producto"><strong>$ 1390,00</strong></p>
+                    </div>
+                </div>
+                <div class="producto__carrito">
+                    <div>
+                        <img src="/media/img/mercado/sahumerios7.png" alt="Img Producto 2">
+                    </div>
+                    <div class="detalles__productos">
+                        <p><span>Carbones Defumación Sagrada Madre</span></p>
+                        <p>(Caja x 4 un.) / <strong>Variedad: 7 Poderes</strong></p>
+                        <label for="tentacles">Cantidad:</label>
+                        <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="2">
+                    </div>
+                    <div class="boton__eliminarProducto">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">
+                            <img src="/media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        </button>
+                        <p class="precio__producto"><strong>$ 760,00</strong></p>
+                    </div>
+                </div>
+                <div class="total__carrito">
+                    <p><strong>Valor de la compra: $ 2150,00</strong></p>
+                    <p>Descuentos: $ 0,00</p>
+                    <p>Sub-total: $ 2150,00</p>
+                    <p>Envío: (A definir)</p>
+                    <p><span>TOTAL: $ 2150,00 + Envío</span></p>
+                </div>
+                <button class="boton_continuar">Continuar ></button>
+            </div>
+        </div>
+        <!--fin offcanvas carrito-->
+        <section>
+            <div class="mainContacto__contactanos">
+                <h1>Contáctanos</h1>
+                <p>Si tenés alguna duda completa el formulario y en la brevedad te estamos contestando.</p>
+                <form action="">
+                    <fieldset>
+                        <br>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" required name="nombre" placeholder="Ingresa tu nombre">
+                            <br><br>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" required name="apellido" placeholder="Ingresa tu apellido">
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" required name="email" placeholder="Ingresa tu email">
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="motivo">Motivo de tu consulta</label>
+                            <select class="motivoConsulta" name="motivo">
+                                <option value="vacio"></option>
+                                <option value="productos">Productos</option>
+                                <option value="catalogo">Catálogo</option>
+                                <option value="envios">Envíos</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="comentario">Dejanos tu consulta:</label>
+                            <br>
+                            <textarea class="textAreaFormulario" name="comentario" id="" cols="50" rows="10"
+                                placeholder="Escribe tu consulta"></textarea>
+                            <br><br>
+                        </div>
+                        <div>
+                            <label for="suscripcion">Suscribirse a las novedades</label>
+                            <input type="checkbox" name="suscripcion">
+                            <br><br>
+                        </div>
+                        <div>
+                            <input class="borrarEnviar" type="submit" value="Borrar Datos">
+                            <input class="borrarEnviar" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <div class="botonWhatsapp">
+            <a href="https://api.whatsapp.com/send?phone=543572675531&fbclid=IwAR3w9dlPIrug47BJMsfwq4L0CAB27TQWI6jcCqQb0X46TpAbvKnZl0uKgPo"
+                target="_blank"><img src="./media/img/botonWhatsapp.png" alt="Botón Whatsapp Contacto"></a>
+        </div>
+        <div>
+            <a href="#top" class="botonFlechaTop"><img src="./media/img/botonTop.png" alt="Botón Flecha Top"></a>
+        </div>
+        <div>
+            <a href="ayuda.html" class="botonSoporte"><img src="./media/img/botonSoporte.png" alt="Botón Soporte"></a>
+        </div>
+    </main>
+    <!--fin del main-->
+    <!--inicio del footer-->
+    <footer>
+        <div class="conteiner__footer">
+            <div class="footerSecciones">
+                <p><strong>SECCIONES</strong></p>
+                <ul>
+                    <li><a href="#top">Ir al Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="botikpuro.html">Boti-K Puro</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ayuda.html">Ayuda y Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footerContacto">
+                <p><strong>CONTACTO</strong></p>
+                <ul>
+                    <li><img src="media/img/logoTelefono.png" alt="Logo Teléfono"> 03572 67-5531</li>
+                    <li><img src="media/img/logoMail.png" alt="Logo Mail"><a href="mailto:limonjapon@gmail.com">
+                            limonjapon@gmail.com</a></li>
+                    <li><img src="media/img/logoMessenger.png" alt="Logo Messenger"><a
+                            href="https://www.facebook.com/messages/t/101249778272524" target="_blank"> Enviar mensaje</a>
+                    </li>
+                    <li><img src="media/img/logoWhatsapp.png" alt="Logo WhatsApp"><a
+                            href="https://api.whatsapp.com/send?phone=543572675531&fbclid=IwAR3w9dlPIrug47BJMsfwq4L0CAB27TQWI6jcCqQb0X46TpAbvKnZl0uKgPo"
+                            target="_blank"> +54 3572 67-5531</a></li>
+                    <li><img src="media/img/logoUbicacion.png" alt="Logo Ubicación"><a
+                            href="https://www.google.com/maps?ll=-31.915407,-63.67863&z=14&t=m&hl=es-419&gl=AR&mapclient=embed&q=Esteban+Piacenza+226+Oncativo+C%C3%B3rdoba"
+                            target="_blank"> Esteban Piacenza 226</a></li>
+                    <ul class="detallesUbicación">
+                        <li>Oncativo, Córdoba</li>
+                        <li>L a S: 9 a 12 y 17 a 20</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="footerRedes">
+                <p><strong>SEGUINOS EN</strong></p>
+                <a href="https://www.instagram.com/limonjapon/" target="_blank"><img src="media/img/logoInstagram.png"
+                        alt="Logo Instagram" /></a>
+                <a href="https://www.facebook.com/limonjapon/?ref=page_internal" target="_blank"><img
+                        src="media/img/logoFacebook.png" alt="Logo Facebook" /></a>
+                <a href="https://www.youtube.com/channel/UCOrKeoWaHhLT3iX3Zg2G0tQ" target="_blank"><img
+                        src="media/img/logoYoutube.png" alt="Logo YouTube" /></a>
+                <br><br><br>
+                <p><strong>SUSCRIBITE A LAS NOVEDADES</strong></p>
+                <form action="">
+                    <label for="email">Email:</label>
+                    <input type="email" required name="email" placeholder="Ingresa tu email">
+                    <input type="submit" value="Suscribirse" class="botonSuscripcion">
+                </form>
+                <br><br><br>
+                <p><strong>TARJETAS HABILITADAS</strong></p>
+                <img src="/media/img/tarjetaVisa.png" alt="Icono Tarjeta Visa">
+                <img src="/media/img/tarjetaMastercard.png" alt="Icono Tarjeta Mastercard">
+                <img src="/media/img/tarjetaAmex.png" alt="Icono Tarjeta Amex">
+                <img src="/media/img/tarjetaNaranja.png" class="tarjeta__naranja" alt="Icono Tarjeta Naranja">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2021 Limón Japón ©Copyright. Página creada por Alvaro Buchini.</p>
+        </div>
+    </footer>
+    <!--final del footer-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

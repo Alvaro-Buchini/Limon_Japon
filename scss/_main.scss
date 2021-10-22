@@ -1,0 +1,632 @@
+// estilo main html index //
+body{
+    background-color: $color_principal;
+}
+main{
+    background-image: url(/media/img/fondoMosaico.png);
+    background-repeat: repeat;
+    .carrusel{
+        img{
+            width: 100%;
+        }
+    }
+    .porque__lj{
+        width: 100%;
+        background-image: url(/media/img/fondo1.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 2rem auto;
+        padding: 3rem;
+        article{
+            h1{
+                font-family: $titulos;
+                text-align: center;
+                word-spacing: 0.5rem;
+                padding-bottom: 1rem;
+            }
+            p{
+                font-family: $texto;
+                text-align: center;
+                font-size: 1.2rem;
+                word-spacing: 0.3rem;
+                font-weight: 500;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .seccionProductos{
+        width: 95%;
+        margin: 2rem auto;
+        padding: 3rem;
+        background-color: $color_secundario;
+        background-image: url(/media/img/fondo2.jpg);
+        background-position: top;
+        background-size: cover;
+        .productos h2{
+            font-family: $titulos;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .productos p{
+            font-family: $texto;
+            text-align: center;
+            font-size: 1.2rem;
+            word-spacing: 0.3rem;
+            font-weight: 500;
+        }
+        .conteinerCategorias{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center;
+            justify-content: space-around;
+            .tarjeta_producto{
+                width: 18rem;
+                padding: 1rem 1rem;
+                margin: 1rem auto;
+            }
+            h3{
+                font-family: $titulos;
+                text-align: center;
+                transition: 0.5s;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                &:hover{
+                    background-color: $color_gris;
+                    color: #ffffff;
+                }
+            }
+            li{
+                text-align: left;
+                font-family: $texto;
+                &:hover{
+                    background-image: linear-gradient(to left,$color_gris,#ffffff);                    
+                }
+            }
+            button{
+                @extend.boton__agregar;
+            }
+        }
+    }
+    .comoComprar_titulo{
+        @include comoComprarTitulo(1rem 2rem 0rem 2rem);
+    }
+    .comoComprar{
+        @include comoComprar (0rem 1rem 2rem 1rem);
+        .comoComprar__bloque{
+            @include comoComprarBloque;
+            img{
+                width: 60px;
+                margin: 1rem;
+            }
+            p{
+                font-family: $titulos;
+                font-size: 1rem;
+            }
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+    .botonWhatsapp{
+        img{
+            width: 70px;
+            position: fixed;
+            top: 75%;
+            right: -13px;
+            z-index: 3 !important;
+            transition: 0.5s;
+            opacity: 0.7;
+            &:hover{
+                right: 0px; 
+                opacity: 1;
+            }
+        }
+    }
+    .botonFlechaTop{
+        img{
+            width: 140px;
+            position: fixed;
+            top: 74%;
+            left: -85px;
+            z-index: 3 !important;
+            transition: 0.5s;
+            opacity: 0.7;
+            &:hover{
+                left: -70px; 
+                opacity: 1;
+            }
+        }
+    }
+    .botonSoporte{
+        img{
+            width: 140px;
+            position: fixed;
+            top: 86%;
+            right: -85px;
+            z-index: 3 !important;
+            transition: 0.5s;
+            opacity: 0.7;
+            &:hover{
+                right: -72px; 
+                opacity: 1;
+            }
+        }
+    }
+    .offcanvas__carrito{
+        width: 35%;
+        .header__carrito{
+            background-color: $color_gris;
+            color: #ffffff;
+            .offcanvas-title{
+                font-family: $titulos;
+                font-size: 1rem;
+            }
+        }
+        .body__carrito{
+            background-color: $color_principal;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            .misProductos__carrito{
+                font-family: $titulos;
+                font-size: 1rem;
+                font-weight: 700;
+                border-bottom: 1px $color_gris solid;
+            }
+            .producto__carrito{
+                padding: 1rem 0rem;
+                border-bottom: 1px $color_gris solid;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                align-content: flex-start;
+                img{
+                    width: 80px;
+                }
+                .detalles__productos{
+                    width: 18rem;
+                    padding: 0rem 1rem;
+                    span{
+                        font-family: $titulos;
+                        font-size: 1rem;
+                        font-weight: 700;
+                    }
+                    p{
+                        font-family: $titulos;
+                        font-size: 0.8rem;
+                    }
+                    label{
+                        font-family: $titulos;
+                        font-size: 0.8rem;
+                    }
+                    input{
+                        width: 3rem;
+                        padding-left: 0.5rem;
+                        font-family: $titulos;
+                        font-weight: 500;
+                    }
+                }
+                .boton__eliminarProducto{
+                    width: 5rem;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-between;
+                    button{
+                        border: none;
+                        opacity: 0.8;
+                        background-color: $color_principal;
+                        &:hover{
+                            background-color: $color_principal;
+                            transform: scale(1.05,1.05);
+                            opacity: 1;
+                        }
+                        img{
+                            width: 2rem;
+                        }
+                    }
+                    .precio__producto{
+                        font-size: 1rem;
+                
+                    }
+                }    
+            }
+            .total__carrito{
+                padding-top: 1.5rem;
+                font-family: $titulos;
+                font-size: 1rem;
+                line-height: 0.8rem;
+                span{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+            .boton_continuar{
+                padding: 0.5rem;
+                border: 1px #ffffff solid;
+                background-color: $color_gris;
+                color: #ffffff;
+                font-family: $titulos;
+                font-size: 1rem;
+                opacity: 0.7;
+                &:hover{
+                    opacity: 1;
+                    border: 1px $color_gris solid;
+                    transition: 0.5s;
+                }
+            }
+        }
+        
+    }
+}
+
+// estilo main html nosotros //
+.main__nosotros{
+    background-color: $color_principal;
+    .nosotros h1{
+        padding: 2rem 3rem 0rem 3rem;
+        font-family: $titulos;
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+    section{
+        .conteinerNosotros{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin: 0rem 3rem;
+            padding-bottom: 3rem;
+            .conteinerNosotros__fotoNosotros{
+                width: 100%;
+                border: 1px $color_gris solid;
+            }
+            .conteinerNosotros__sobreNosotros{
+                height: 55vh;
+                width: 67vw;
+                font-family: $texto;
+                font-size: 1.2rem;
+                line-height: 2rem;
+                font-weight: 500;
+                word-spacing: 0.3rem;
+                padding: 3rem;
+                margin: 3rem 0rem 0rem 0rem;
+                background-image: url(/media/img/fondo2.jpg);
+                background-size: cover;
+                border: 1px $color_gris solid;
+                span{
+                    font-weight: 700;
+                }
+            }
+            .conteinerNosotros__fotoPolaroid img{
+                height: 55vh;
+                margin: 3rem 0rem 0rem 0rem;
+                border: 1px $color_gris solid;
+            }
+        }
+    }
+}
+
+// estilo main html productos //
+.main__productos{
+    background-image: url(/media/img/fondoMosaico.png);
+    background-repeat: repeat;
+    .banner__catalogo{
+        a{
+            img{
+                width: 100%;
+                border-bottom: 1px $color_gris solid;
+            }
+        }
+        
+    }
+    h1{
+        @include comoComprarTitulo(1rem 3rem 0rem 3rem);
+    }
+    .comoComprar{
+        @include comoComprar (0rem 2rem);
+        .comoComprar__bloque{
+            @include comoComprarBloque;
+            img{
+                width: 60px;
+                margin: 1rem;
+            }
+            p{
+                font-family: $titulos;
+                font-size: 1rem;
+            }
+            span{
+                font-weight: bolder;
+            }
+        }
+    }
+    .conteiner__productos{
+        margin: 2rem 3rem 0rem 3rem;
+        padding-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 1fr;
+        grid-column-gap: 1rem;
+        grid-template-areas: 
+        "menuProductos categorias"; 
+        .menuProductos{
+            position: sticky;
+            top: 6rem;
+            grid-area: menuProductos;
+            height: 70vh;
+            padding: 1rem 1rem;  
+            background-color: #ffffff;
+            opacity: 0.8;
+            .menuProductos__ul{
+                font-family: $titulos;
+                line-height: 3rem;
+                margin-left: -2rem;
+                a{
+                    text-decoration: none;
+                    color: #000000;
+                    &:hover{
+                        color: #ffffff;
+                        background-color: $color_gris;
+                    }
+                    .menuProductos__li{
+                        padding-left: 1rem;
+                        list-style-type: none;
+                        border-bottom: 1px $color_gris solid;
+                        &:hover{
+                            background-color: $color_gris;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .conteiner__categorias{
+            padding: 0rem 1rem;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            grid-area: categorias;
+            h2{
+                font-family: $titulos;
+                font-size: 1.7rem;
+                word-spacing: 0.5rem;
+                letter-spacing: 0.1rem;
+                margin-bottom: 1rem;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                color: #ffffff;
+                background-color: $color_gris;
+                opacity: 0.7;
+            }
+            .conteiner__tarjetas{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                &--yoga{
+                    align-self: flex-start;
+                    column-gap: 1.5rem;
+                }
+                .tarjeta__producto{
+                    margin-bottom: 1.5rem;
+                    background-color: #ffffff;
+                    border: 1px $color_gris solid;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-between;
+                    width: 14rem;
+                    opacity: 0.8;
+                    &:hover{
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                    .conteiner__nombreProducto{
+                        height: 14vh;
+                        h3{
+                            font-family: $titulos;
+                            font-weight: 700;
+                            text-align: left;
+                            font-size: 1.1rem;
+                            padding: 0.8rem 0.5rem 0rem 0.5rem;
+                        }
+                        p{
+                            font-size: 0.8rem;
+                        }
+                    }
+                    p{
+                        font-family: $titulos;
+                        text-align: left;
+                        font-size: 1.2rem;
+                        padding: 0rem 0.5rem;
+                    }
+                    .cantidad__variedad{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        label{
+                            font-family: $titulos;
+                            text-align: left;
+                            font-size: 0.9rem;
+                            margin: 0.5rem;
+                        }
+                        input{
+                            width: 3rem;
+                            font-family: $titulos;
+                            padding-left: 0.5rem;
+                        }
+                        select{
+                            width: 100%;
+                            height: 2rem;
+                            font-family: $titulos;
+                            font-size: 1rem;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                    .boton__agregar{
+                        margin: 0.5rem;
+                        padding: 0.5rem;
+                        background-color: $color_gris;
+                        border: 1px #ffffff solid;
+                        font-family: $titulos;
+                        font-size: 1rem;
+                        text-align: center;
+                        color: #ffffff;
+                        opacity: 0.7;
+                        &:hover{
+                            opacity: 1;
+                            border: 1px $color_gris solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// estilo main html contacto //
+.mainContacto{
+    background-color: $color_principal;
+    background-image: url(/media/img/fondo2.jpg);
+    background-size: cover;
+    section{
+        .mainContacto__contactanos{
+            padding: 3rem;
+            h1{
+                font-family: $titulos;
+                font-size: 2rem;
+                text-align: center;
+                letter-spacing: 0.3rem;
+                margin-bottom: 3vh;
+                text-align: center;
+            }
+            p{
+                font-family: $texto;
+                font-size: 1.2rem;
+                text-align: center;
+                font-weight: 500;
+                word-spacing: 0.3rem;
+            }
+            form{
+                fieldset{
+                    margin: 5vh auto;
+                    padding: 5vh auto;
+                    text-align: center;
+                    border: none;
+                    label{
+                        font-family: $titulos;
+                        font-weight: 700;
+                    }
+                    input{
+                        font-family: $titulos;
+                        font-size: 1rem;
+                        padding: 0.3rem;
+                    }
+                    .inputRadio{
+                        font-family: $titulos;
+                        word-spacing: 1rem;
+                        font-size: 1rem;
+                    }
+                    .motivoConsulta{
+                        font-family: $titulos;
+                        font-size: 1rem;
+                        padding: 0.3rem;
+                    }
+                    .textAreaFormulario{
+                        font-family: $titulos;
+                        margin: 1rem;
+                        padding: 0.5rem;
+                        font-size: 1rem;
+                    }
+                    .borrarEnviar{
+                        font-weight: 700;
+                        font-size: 1rem;
+                        padding: 0.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// estilo main html ayuda //
+.main__ayuda{
+    h1{
+        font-family: $titulos;
+        font-size: 1.7rem;
+        background-color: $color_gris;
+        color: #ffffff;
+        margin: 0rem 3rem;
+        padding: 1rem 3rem 1rem 3rem;
+        opacity: 0.8;
+        text-align: center;
+    }
+    .conteiner__ayuda{
+        padding: 1rem 3rem 3rem 3rem;
+        opacity: 0.8;
+        .boton__pregunta{
+            width: 100%;
+            background-color: $color_secundario;
+            text-align: left;
+            color: #000000;
+            border: none;
+            padding: 1rem;
+            &--dif{
+                background-color: $color_principal;
+            }
+            &:hover{
+                background-color: $color_gris;
+                color: #ffffff;
+                transition: 0.5s;
+            }
+        }
+        .acordeon__ayuda{
+            padding-top: 1.5rem;
+            z-index: 1;
+            h2{
+                font-family: $titulos;
+                font-size: 1.3rem;
+                letter-spacing: 0.1rem;
+                padding: 1rem 0rem 0rem 0rem;
+                font-weight: 600;
+            }
+            h3{
+                font-family: $titulos;
+                font-size: 1rem;
+                letter-spacing: 0.1rem;
+            }
+            p{
+                padding-left: 2rem;
+                font-family: $titulos;
+                font-size: 0.9rem;
+            }
+            a{
+                text-decoration: none;
+                color: #000000;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+// estilo main html botik //
+.main__botik{
+    background-image: url(/media/img/fondoMosaico.png);
+    background-repeat: repeat;
+    .botik__h1{
+        font-family: $titulos;
+        font: 0.5rem;
+        margin: 0rem;
+        padding: 2rem 2rem 0rem 2rem;
+    }
+    .botik__p{
+        font-family: $texto;
+        padding: 1rem 2rem 2rem 2rem;
+        margin: 0rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        word-spacing: 0.2rem;
+    }
+}
