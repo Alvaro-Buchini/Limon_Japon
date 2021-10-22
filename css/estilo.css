@@ -932,7 +932,7 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 }
 
 .main__botik {
-  background-image: url("/media/img/fondoMosaico.png");
+  background-image: url(/media/fondoMosaico.png);
   background-repeat: repeat;
 }
 

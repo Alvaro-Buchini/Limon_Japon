@@ -613,7 +613,7 @@ main{
 
 // estilo main html botik //
 .main__botik{
-    background-image: url("/media/img/fondoMosaico.png");
+    background-image: url(/media/fondoMosaico.png);
     background-repeat: repeat;
     .botik__h1{
         font-family: $titulos;
