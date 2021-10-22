@@ -88,7 +88,7 @@ body {
 }
 
 main {
-  background-image: url(/media/img/fondoMosaico.png);
+  background-image: url(media/img/fondoMosaico.png);
   background-repeat: repeat;
 }
 
@@ -98,7 +98,7 @@ main .carrusel img {
 
 main .porque__lj {
   width: 100%;
-  background-image: url(/media/img/fondo1.jpg);
+  background-image: url(media/img/fondo1.jpg);
   background-position: center;
   background-size: cover;
   margin: 2rem auto;
@@ -129,7 +129,7 @@ main .seccionProductos {
   margin: 2rem auto;
   padding: 3rem;
   background-color: #f8f0df;
-  background-image: url(/media/img/fondo2.jpg);
+  background-image: url(media/img/fondo2.jpg);
   background-position: top;
   background-size: cover;
 }
@@ -495,7 +495,7 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   word-spacing: 0.3rem;
   padding: 3rem;
   margin: 3rem 0rem 0rem 0rem;
-  background-image: url(/media/img/fondo2.jpg);
+  background-image: url(media/img/fondo2.jpg);
   background-size: cover;
   border: 1px #9d9d9d solid;
 }
@@ -511,7 +511,7 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 }
 
 .main__productos {
-  background-image: url(/media/img/fondoMosaico.png);
+  background-image: url(media/img/fondoMosaico.png);
   background-repeat: repeat;
 }
 
@@ -796,7 +796,7 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 
 .mainContacto {
   background-color: #fefbf3;
-  background-image: url(/media/img/fondo2.jpg);
+  background-image: url(media/img/fondo2.jpg);
   background-size: cover;
 }
 
@@ -932,7 +932,7 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 }
 
 .main__botik {
-  background-image: url(/media/img/fondoMosaico.png);
+  background-image: url(media/img/fondoMosaico.png);
   background-repeat: repeat;
 }
 
