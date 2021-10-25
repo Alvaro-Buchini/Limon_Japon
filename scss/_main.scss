@@ -3,7 +3,7 @@ body{
     background-color: $color_principal;
 }
 main{
-    background-image: url(media/fondoMosaico.png);
+    background-image: url(../media/img/fondoMosaico.png);
     background-repeat: repeat;
     .carrusel{
         img{
@@ -12,7 +12,7 @@ main{
     }
     .porque__lj{
         width: 100%;
-        background-image: url(media/fondo1.jpg);
+        background-image: url(../media/img/fondo1.jpg);
         background-position: center;
         background-size: cover;
         margin: 2rem auto;
@@ -41,7 +41,7 @@ main{
         margin: 2rem auto;
         padding: 3rem;
         background-color: $color_secundario;
-        background-image: url(media/fondo2.jpg);
+        background-image: url(../media/img/fondo2.jpg);
         background-position: top;
         background-size: cover;
         .productos h2{
@@ -291,7 +291,7 @@ main{
                 word-spacing: 0.3rem;
                 padding: 3rem;
                 margin: 3rem 0rem 0rem 0rem;
-                background-image: url(media/fondo2.jpg);
+                background-image: url(../media/img/fondo2.jpg);
                 background-size: cover;
                 border: 1px $color_gris solid;
                 span{
@@ -309,7 +309,7 @@ main{
 
 // estilo main html productos //
 .main__productos{
-    background-image: url(media/fondoMosaico.png);
+    background-image: url(../media/img/fondoMosaico.png);
     background-repeat: repeat;
     .banner__catalogo{
         a{
@@ -489,7 +489,7 @@ main{
 // estilo main html contacto //
 .mainContacto{
     background-color: $color_principal;
-    background-image: url(media/fondo2.jpg);
+    background-image: url(../media/img/fondo2.jpg);
     background-size: cover;
     section{
         .mainContacto__contactanos{
@@ -613,7 +613,7 @@ main{
 
 // estilo main html botik //
 .main__botik{
-    background-image: url(/media/fondoMosaico.png) ;
+    background-image: url(../media/img/fondoMosaico.png) ;
     background-repeat: repeat;
     .botik__h1{
         font-family: $titulos;
