@@ -44,5 +44,6 @@ $texto: 'Bodoni Moda', serif;
         background-color: $color_principal;
         transform: scale(1.05,1.05);
         transition: 0.5s;
+        box-shadow: 3px 3px 15px $color_gris;
     }
 }

@@ -88,7 +88,7 @@
                         <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="1">
                     </div>
                     <div class="boton__eliminarProducto">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
                             aria-controls="offcanvasWithBothOptions">
                             <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
                         </button>
@@ -106,7 +106,7 @@
                         <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="2">
                     </div>
                     <div class="boton__eliminarProducto">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
                             aria-controls="offcanvasWithBothOptions">
                             <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
                         </button>
@@ -125,7 +125,7 @@
         </div>
         <!--fin offcanvas carrito-->
         <!--carrusel index HTML-->
-        <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="carousel" data-bs-interval="8000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -133,17 +133,22 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="media/img/banner1.jpg" class="d-block" alt="Banner Limón Japón">
-                </div>
-                <div class="carousel-item">
-                    <a href="https://wa.me/c/5493572675531" target="_blank"><img src="./media/img/banner2.jpg" class="d-block"
-                            alt="Banner Catálogo Whatsapp"></a>
+                    <video src="media/video/video_carrusel.mp4" preload="auto" autoplay loop class="d-block videoBanner"></video>
                 </div>
                 <div class="carousel-item">
                     <img src="media/img/banner3.jpg" class="d-block" alt="Banner Flores">
+                </div>
+                <div class="carousel-item">
+                    <a href="https://wa.me/c/5493572675531" target="_blank"><img src="./media/img/banner4.jpg" class="d-block"
+                            alt="Banner Catálogo Whatsapp"></a>
+                </div>
+                <div class="carousel-item">
+                    <img src="media/img/banner1.jpg" class="d-block" alt="Banner Flores">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -165,6 +170,15 @@
                     <p>Nuestra misión es ofrecer productos que ayuden a alcanzar la <span>conciencia y el equilibrio.</span></p>
                     <p>Estamos convencidos de que <span>el movimiento nos despierta.</span></p>
                 </article>
+            </section>
+            <section>
+                <div class="feedInsta">
+                    <div class="carruselInsta"
+                    loading="lazy"
+                    data-mc-src="3492302b-e930-4f83-b174-4dd08ccae3b2#instagram"></div>
+                    <div class="seguinosInstagram"><a href="https://www.instagram.com/limonjapon/" target="_blank"><img src="media/img/logoInstagramNegro.png"
+                    alt="Logo Instagram"/>Seguinos en Instagram</a></div>
+                </div>
             </section>
         <!--sección categorías-->
         <div class="seccionProductos">
@@ -397,5 +411,9 @@
     <!--final del footer-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script 
+    src="https://cdn2.woxo.tech/a.js#615391bb03625a0016d334fa" 
+    async data-usrc>
+    </script>
 </body>
 </html>

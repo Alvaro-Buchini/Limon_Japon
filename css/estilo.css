@@ -96,6 +96,10 @@ main .carrusel img {
   width: 100%;
 }
 
+main .carrusel video {
+  width: 100%;
+}
+
 main .porque__lj {
   width: 100%;
   background-image: url(../media/img/fondo1.jpg);
@@ -124,6 +128,44 @@ main .porque__lj article p span {
   font-weight: 700;
 }
 
+main .feedInsta {
+  background-image: url(../media/img/fondo2.jpg);
+  background-position: bottom;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
+  width: 95%;
+  margin: 2rem auto;
+}
+
+main .feedInsta .carruselInsta {
+  padding: 1rem 0rem;
+  width: 100%;
+}
+
+main .feedInsta .seguinosInstagram {
+  width: 25rem;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  background-image: url(../media/img/fondo2.jpg);
+  background-position: bottom;
+  position: absolute;
+  top: 1085px;
+  left: 472px;
+}
+
+main .feedInsta .seguinosInstagram a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+main .feedInsta .seguinosInstagram a img {
+  width: 35px;
+  margin: 0px 10px 10px 40px;
+}
+
 main .seccionProductos {
   width: 95%;
   margin: 2rem auto;
@@ -132,6 +174,9 @@ main .seccionProductos {
   background-image: url(../media/img/fondo2.jpg);
   background-position: top;
   background-size: cover;
+  border-radius: 13px;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
 }
 
 main .seccionProductos .productos h2 {
@@ -242,6 +287,8 @@ main .comoComprar .comoComprar__bloque:hover {
           transform: scale(1.05, 1.05);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+          box-shadow: 3px 3px 15px #9d9d9d;
 }
 
 main .comoComprar .comoComprar__bloque img {
@@ -294,7 +341,7 @@ main .botonSoporte img {
   width: 140px;
   position: fixed;
   top: 86%;
-  right: -85px;
+  right: -82px;
   z-index: 3 !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -302,7 +349,7 @@ main .botonSoporte img {
 }
 
 main .botonSoporte img:hover {
-  right: -72px;
+  right: -69px;
   opacity: 1;
 }
 
@@ -342,7 +389,7 @@ main .offcanvas__carrito .body__carrito .misProductos__carrito {
 }
 
 main .offcanvas__carrito .body__carrito .producto__carrito {
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
   border-bottom: 1px #9d9d9d solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,6 +617,8 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
           transform: scale(1.05, 1.05);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+          box-shadow: 3px 3px 15px #9d9d9d;
 }
 
 .main__productos .comoComprar .comoComprar__bloque img {
