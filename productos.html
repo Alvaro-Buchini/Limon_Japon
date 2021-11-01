@@ -91,9 +91,9 @@
                         <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="1">
                     </div>
                     <div class="boton__eliminarProducto">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions">
-                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
                         </button>
                         <p class="precio__producto"><strong>$ 1390,00</strong></p>
                     </div>
@@ -109,9 +109,9 @@
                         <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="2">
                     </div>
                     <div class="boton__eliminarProducto">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions">
-                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
                         </button>
                         <p class="precio__producto"><strong>$ 760,00</strong></p>
                     </div>
@@ -123,18 +123,17 @@
                     <p>Envío: (A definir)</p>
                     <p><span>TOTAL: $ 2150,00 + Envío</span></p>
                 </div>
-                <button class="boton_continuar">Continuar ></button>
+                <a href="404.html" class="continuarCompra">Continuar ></a>
             </div>
         </div>
         <!--fin offcanvas carrito-->
         <div class="banner__catalogo">
-            <a href="https://wa.me/c/5493572675531" target="_blank"><img src="media/img/banner2.jpg"
-                    alt="Banner Catálogo Whatsapp"></a>
+            <a href="https://wa.me/c/5493572675531" target="_blank"><img src="media/img/banner4.jpg" alt="Banner Catálogo Whatsapp"></a>
         </div>
         <!--inicio sección como comprar-->
         <h1>¿Cómo comprar?</h1>
         <section class="comoComprar">
-            <div class="comoComprar__bloque">
+            <div class="comoComprar__bloque bloqueIzquierdo">
                 <img src="media/img/ComoComprar1.png" alt="Icono Lupa">
                 <p><span>¡Elegí lo que más te guste y agregalo al carrito!</span></p>
                 <p>Podés seleccionar la cantidad y la variedad del producto que quieras. </p>
@@ -156,7 +155,7 @@
                 <p><span>Seleccioná Envío o Retiro</span></p>
                 <p>Podés elegir recibirlo en tu casa o retiro en alguno de nuestros puntos habilitados.</p>
             </div>
-            <div class="comoComprar__bloque">
+            <div class="comoComprar__bloque bloqueDerecho">
                 <img src="media/img/ComoComprar5.png" alt="Icono Mano OK">
                 <p><span>¡Confirmá tu pedido!</span></p>
                 <p>Te vamos a envíar a tu mail toda la información necesaria, comprobande y n° de pedido (para el
@@ -221,7 +220,7 @@
                                 <option value="catalogo">Coco</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast1">Agregar al carrito</button>        
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto cosmetica 2-->
@@ -245,7 +244,7 @@
                                 <option value="envios">Jojoba</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast2">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto cosmetica 3-->
@@ -272,7 +271,7 @@
                                 <option value="otro">Caléndula y Manzanilla</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast3">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto cosmetica 4-->
@@ -287,7 +286,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast4">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto cosmetica 5-->
@@ -302,7 +301,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast5">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto cosmetica 6-->
@@ -325,7 +324,7 @@
                                 <option value="catalogo">Oliva y Bambú</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast6">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto cosmetica 7-->
@@ -349,7 +348,7 @@
                                 <option value="catalogo">Rosa Mosqueta</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast7">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto cosmetica 8-->
@@ -376,7 +375,7 @@
                                 <option value="catalogo">Lima y Limón</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast8">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -414,7 +413,7 @@
                                 <option value="catalogo">Cítrico</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast9">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto sahumerios 2-->
@@ -429,7 +428,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast10">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto sahumerios 3-->
@@ -444,7 +443,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast11">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto sahumerios 4-->
@@ -472,7 +471,7 @@
                                 <option value="catalogo">Nag Champa</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast12">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto sahumerios 5-->
@@ -505,7 +504,7 @@
                                 <option value="catalogo">Palo Santo c/Romero</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast13">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto sahumerios 6-->
@@ -529,7 +528,7 @@
                                 <option value="catalogo">Salvia y Aromática</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast14">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto sahumerios 7-->
@@ -560,7 +559,7 @@
                                 <option value="catalogo">Yagra y Canela</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast15">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto sahumerios 8-->
@@ -584,7 +583,7 @@
                                 <option value="catalogo">Salvia Blanca</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast16">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -606,7 +605,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast17">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto hogar 2-->
@@ -621,7 +620,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast18">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto hogar 3-->
@@ -636,7 +635,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast19">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto hogar 4-->
@@ -651,7 +650,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast20">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto hogar 5-->
@@ -674,7 +673,7 @@
                                 <option value="catalogo">Bambú</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast21">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto hogar 6-->
@@ -689,7 +688,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast22">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto hogar 7-->
@@ -719,7 +718,7 @@
                                     Enebro</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast23">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto hogar 8-->
@@ -744,7 +743,7 @@
                                 <option value="catalogo">Maracuyá</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast24">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -766,7 +765,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast25">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto altar 2-->
@@ -781,7 +780,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast26">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto altar 3-->
@@ -796,7 +795,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast27">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto altar 4-->
@@ -811,7 +810,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast28">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto altar 5-->
@@ -826,7 +825,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast29">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto altar 6-->
@@ -841,7 +840,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast30">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto altar 7-->
@@ -856,7 +855,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast31">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto altar 8-->
@@ -871,7 +870,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast32">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -893,7 +892,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast33">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto té en hebras 2-->
@@ -920,7 +919,7 @@
                                 <option value="catalogo">Earl grey touche (Perseverancia)</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast34">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto té en hebras 3-->
@@ -947,7 +946,7 @@
                                 <option value="catalogo">Earl grey touche (Perseverancia)</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast35">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto té en hebras 4-->
@@ -974,7 +973,7 @@
                                 <option value="catalogo">LEMON FLOWER - Rooibos sudáfrica</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast36">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto té en hebras 5-->
@@ -999,7 +998,7 @@
                                 <option value="catalogo">DEEP AFRICA - Rooibos sudáfrica (descafeinado)</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast37">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto té en hebras 6-->
@@ -1023,7 +1022,7 @@
                                 <option value="catalogo">Paraíso</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast38">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto té en hebras 7-->
@@ -1051,7 +1050,7 @@
                                 <option value="catalogo">Fibras Naturales</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast39">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto té en hebras 8-->
@@ -1066,7 +1065,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast40">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -1105,7 +1104,7 @@
                                 <option value="catalogo">Vainilla Caramelo</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast41">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto aromatizantes 2-->
@@ -1135,7 +1134,7 @@
                                 <option value="catalogo">Vainilla y Coco</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast42">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto aromatizantes 3-->
@@ -1162,7 +1161,7 @@
                                 <option value="catalogo">Vainilla y Coco</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast43">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto aromatizantes 4-->
@@ -1186,7 +1185,7 @@
                                 <option value="catalogo">Manzana y Canela</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast44">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -1224,7 +1223,7 @@
                                 <option value="catalogo">Verbena y Fresias</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast45">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto velas 2-->
@@ -1255,7 +1254,7 @@
                                 <option value="catalogo">Verbena y Fresias</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast46">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto velas 3-->
@@ -1270,7 +1269,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast47">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto velas 4-->
@@ -1294,7 +1293,7 @@
                                 <option value="catalogo">Gardenia</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast48">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto velas 5-->
@@ -1317,7 +1316,7 @@
                                 <option value="catalogo">Cedro y Verbena</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast49">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto velas 6-->
@@ -1341,7 +1340,7 @@
                                 <option value="catalogo">Manzana y Canela</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast50">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto velas 7-->
@@ -1368,7 +1367,7 @@
                                 <option value="catalogo">Lavanda</option>
                             </select>
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast51">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto velas 8-->
@@ -1383,7 +1382,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast52">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -1405,7 +1404,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast53">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                     <!--inicio tarjeta producto yoga 2-->
@@ -1420,7 +1419,7 @@
                             <label for="tentacles">Cantidad:</label>
                             <input type="number" id="tentacles" name="tentacles" min="1" max="10">
                         </div>
-                        <input type="submit" class="boton__agregar" value="Agregar al carrito">
+                        <button type="button" class="boton__agregar" id="liveToast54">Agregar al carrito</button>
                     </div>
                     <!--fin tarjeta producto-->
                 </div>
@@ -1437,6 +1436,19 @@
         </div>
         <div>
             <a href="ayuda.html" class="botonSoporte"><img src="media/img/botonSoporte.png" alt="Botón Soporte"></a>
+        </div>
+        <!--notificación toast-->
+        <div class="position-fixed bottom-0 end-0 p-3 m-3" style="z-index:11">
+            <div id="liveToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+                <div class="toast-header">
+                    <img src="media/img/favicon.png" class="rounded me-2 logoToast" alt="Logo Limón Japón">
+                    <strong class="me-auto tituloToast">¡Listo!</strong>
+                    <button type="button" class="botonCerrar" data-bs-dismiss="toast" aria-label="Close"><img src="media/img/botonCerrrar.png" alt="Botón Cerrar"></button>
+                </div>
+                <div class="toast-body">
+                    Agregaste este producto a tu carrito.
+                </div>
+            </div>
         </div>
     </main>
     <!--fin del main-->
@@ -1503,12 +1515,390 @@
         </div>
     </footer>
     <!--final del footer-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
+    <script>
+            $(document).ready(function () {
+                $("#liveToast1").click(function () {
+                    $('.toast').toast('show');
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast2").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast3").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast4").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast5").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast6").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast7").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast8").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast9").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast10").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $("#liveToast11").click(function () {
+                    $('.toast').toast('show');
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast12").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast13").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast14").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast15").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast16").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast17").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast18").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast19").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast20").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $("#liveToast21").click(function () {
+                    $('.toast').toast('show');
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast22").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast23").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast24").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast25").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast26").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast27").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast28").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast29").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast30").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $("#liveToast31").click(function () {
+                    $('.toast').toast('show');
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast32").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast33").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast34").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast35").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast36").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast37").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast38").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast39").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast40").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $("#liveToast41").click(function () {
+                    $('.toast').toast('show');
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast42").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast43").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast44").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast45").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast46").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast47").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast48").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast49").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast50").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $("#liveToast51").click(function () {
+                    $('.toast').toast('show');
+                });
+            });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast52").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast53").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#liveToast54").click(function () {
+                $('.toast').toast('show');
+            });
+        });
+    </script>
 </body>
-
 </html>

@@ -11,43 +11,50 @@ header{
             flex-flow: row nowrap;
             justify-content: space-between;
         }
-        .logoNavbar img{
-            margin-left: 2vw;
-            width: 10rem;
-        }
+        .logoNavbar{
+            a{
+                img{
+                    margin-left: 2vw;
+                    width: 10rem;
+                }
+            }
+        } 
         .botonHamburguesa{
+            width: 10rem;
             margin-right: 1rem;
-            padding: 0rem 3rem;
+            padding: 0rem 1rem;
             background-color: $color_secundario;
         }
-        ul{
-            padding: 0rem 1rem;
-            li{
+        .menuNavbar{
+            ul{
                 padding: 0rem 1rem;
-                border-left: 1px solid $color_gris;
-                font-family: $titulos;
-                &:hover{
-                    background-color: $color_gris;
-                    transition: 0.5s;
+                li{
+                    padding: 0rem 1rem;
+                    border-left: 1px solid $color_gris;
+                    font-family: $titulos;
+                    &:hover{
+                        background-color: $color_gris;
+                        transition: 0.5s;
+                    }
+                    a:hover{
+                        color: #ffffff !important;               
+                    }
                 }
-                a:hover{
-                    color: #ffffff !important;               
+                .menuNavbar__contacto{
+                    border-right: 1px solid $color_gris;
                 }
-            }
-            .menuNavbar__contacto{
-                border-right: 1px solid $color_gris;
-            }
-            .boton__carrito{
-                border: none;
-                margin: 0rem 0.5rem;
-                opacity: 0.8;
-                &:hover{
-                    background-color: #ffffff;
-                    transform: scale(1.05,1.05);
-                    opacity: 1;
-                }
-                img{
-                    width: 2.2rem;
+                .boton__carrito{
+                    border: none;
+                    margin: 0rem 0.5rem;
+                    opacity: 0.8;
+                    &:hover{
+                        background-color: #ffffff;
+                        transform: scale(1.05,1.05);
+                        opacity: 1;
+                    }
+                    img{
+                        width: 2.2rem;
+                    }
                 }
             }
         }

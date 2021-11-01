@@ -91,9 +91,9 @@
                         <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="1">
                     </div>
                     <div class="boton__eliminarProducto">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions">
-                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
                         </button>
                         <p class="precio__producto"><strong>$ 1390,00</strong></p>
                     </div>
@@ -109,9 +109,9 @@
                         <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="2">
                     </div>
                     <div class="boton__eliminarProducto">
-                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions">
-                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
                         </button>
                         <p class="precio__producto"><strong>$ 760,00</strong></p>
                     </div>
@@ -123,56 +123,55 @@
                     <p>Envío: (A definir)</p>
                     <p><span>TOTAL: $ 2150,00 + Envío</span></p>
                 </div>
-                <button class="boton_continuar">Continuar ></button>
+                <a href="404.html" class="continuarCompra">Continuar ></a>
             </div>
         </div>
         <!--fin offcanvas carrito-->
         <section>
             <div class="mainContacto__contactanos">
                 <h1>Contáctanos</h1>
-                <p>Si tenés alguna duda completa el formulario y en la brevedad te estamos contestando.</p>
+                <p>Si tenés alguna duda completa el formulario y en la brevedad te contestamos.</p>
                 <form action="">
                     <fieldset>
-                        <br>
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" required name="nombre" placeholder="Ingresa tu nombre">
-                            <br><br>
-                            <label for="apellido">Apellido:</label>
-                            <input type="text" required name="apellido" placeholder="Ingresa tu apellido">
-                            <br><br>
+                        <div class="bloqueFormulario">
+                            <div>
+                                <label for="nombre">Nombre:</label><br>
+                                <input type="text" required name="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido:</label><br>
+                                <input type="text" required name="apellido" placeholder="Ingresa tu apellido">
+                            </div>
+                            <div>
+                                <label for="email">Email:</label><br>
+                                <input type="email" required name="email" placeholder="Ingresa tu email">
+                            </div>
+                            <div>
+                                <label for="motivo" required>Motivo:</label><br>
+                                <select class="motivoConsulta" required name="select">
+                                    <option></option>
+                                    <option value="productos">Productos</option>
+                                    <option value="catalogo">Catálogo</option>
+                                    <option value="envios">Envíos</option>
+                                    <option value="envios">Pagos</option>
+                                    <option value="envios">Devoluciones</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="suscripcion">Suscribirse a las novedades</label>
+                                <input type="checkbox" name="suscripcion" class="checkbox">
+                            </div>
                         </div>
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" required name="email" placeholder="Ingresa tu email">
-                            <br><br>
-                        </div>
-                        <div>
-                            <label for="motivo">Motivo de tu consulta</label>
-                            <select class="motivoConsulta" name="motivo">
-                                <option value="vacio"></option>
-                                <option value="productos">Productos</option>
-                                <option value="catalogo">Catálogo</option>
-                                <option value="envios">Envíos</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                            <br><br>
-                        </div>
-                        <div>
-                            <label for="comentario">Dejanos tu consulta:</label>
-                            <br>
-                            <textarea class="textAreaFormulario" name="comentario" id="" cols="50" rows="10"
-                                placeholder="Escribe tu consulta"></textarea>
-                            <br><br>
-                        </div>
-                        <div>
-                            <label for="suscripcion">Suscribirse a las novedades</label>
-                            <input type="checkbox" name="suscripcion">
-                            <br><br>
-                        </div>
-                        <div>
-                            <input class="borrarEnviar" type="submit" value="Borrar Datos">
-                            <input class="borrarEnviar" type="submit" value="Enviar">
+                        <div class="bloqueFormulario">
+                            <div>
+                                <label for="comentario">Dejanos tu consulta:</label>
+                                <textarea class="textAreaFormulario" name="comentario" required id="" maxlength="500" cols="50" rows="10" placeholder="Escribe tu consulta"></textarea>
+                            </div>
+                            <div class="borrarEnviar">
+                                <input class="borrar" type="submit" value="Borrar Datos">
+                                <input class="Enviar" type="submit" value="Enviar">
+                            </div>
                         </div>
                     </fieldset>
                 </form>

@@ -31,55 +31,56 @@ header nav.conteiner {
           justify-content: space-between;
 }
 
-header nav .logoNavbar img {
+header nav .logoNavbar a img {
   margin-left: 2vw;
   width: 10rem;
 }
 
 header nav .botonHamburguesa {
+  width: 10rem;
   margin-right: 1rem;
-  padding: 0rem 3rem;
+  padding: 0rem 1rem;
   background-color: #f8f0df;
 }
 
-header nav ul {
+header nav .menuNavbar ul {
   padding: 0rem 1rem;
 }
 
-header nav ul li {
+header nav .menuNavbar ul li {
   padding: 0rem 1rem;
   border-left: 1px solid #9d9d9d;
   font-family: "Josefin Sans", sans-serif;
 }
 
-header nav ul li:hover {
+header nav .menuNavbar ul li:hover {
   background-color: #9d9d9d;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-header nav ul li a:hover {
+header nav .menuNavbar ul li a:hover {
   color: #ffffff !important;
 }
 
-header nav ul .menuNavbar__contacto {
+header nav .menuNavbar ul .menuNavbar__contacto {
   border-right: 1px solid #9d9d9d;
 }
 
-header nav ul .boton__carrito {
+header nav .menuNavbar ul .boton__carrito {
   border: none;
   margin: 0rem 0.5rem;
   opacity: 0.8;
 }
 
-header nav ul .boton__carrito:hover {
+header nav .menuNavbar ul .boton__carrito:hover {
   background-color: #ffffff;
   -webkit-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
   opacity: 1;
 }
 
-header nav ul .boton__carrito img {
+header nav .menuNavbar ul .boton__carrito img {
   width: 2.2rem;
 }
 
@@ -207,34 +208,93 @@ main .seccionProductos .conteinerCategorias {
       justify-content: space-around;
 }
 
-main .seccionProductos .conteinerCategorias .tarjeta_producto {
-  width: 18rem;
-  padding: 1rem 1rem;
-  margin: 1rem auto;
+main .seccionProductos .conteinerCategorias .tarjetaCategoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #ffffff;
+  width: 15rem;
+  border-radius: 10px;
+  margin: 1.5rem;
+  -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+          box-shadow: 3px 3px 15px #9d9d9d;
+  opacity: 0.8;
 }
 
-main .seccionProductos .conteinerCategorias h3 {
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 0.5rem;
-  font-size: 1.2rem;
+main .seccionProductos .conteinerCategorias .tarjetaCategoria:hover {
+  opacity: 1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
-main .seccionProductos .conteinerCategorias h3:hover {
+main .seccionProductos .conteinerCategorias .tarjetaCategoria:hover h3 {
   background-color: #9d9d9d;
   color: #ffffff;
 }
 
-main .seccionProductos .conteinerCategorias li {
-  text-align: left;
-  font-family: "Bodoni Moda", serif;
+main .seccionProductos .conteinerCategorias .tarjetaCategoria:hover li {
+  color: #000000;
 }
 
-main .seccionProductos .conteinerCategorias li:hover {
-  background-image: -webkit-gradient(linear, right top, left top, from(#9d9d9d), to(#ffffff));
-  background-image: linear-gradient(to left, #9d9d9d, #ffffff);
+main .seccionProductos .conteinerCategorias .tarjetaCategoria img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main .seccionProductos .conteinerCategorias .tarjetaCategoria h3 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+main .seccionProductos .conteinerCategorias .tarjetaCategoria ul {
+  text-align: center;
+  padding: 0px;
+}
+
+main .seccionProductos .conteinerCategorias .tarjetaCategoria ul li {
+  color: #9d9d9d;
+  list-style-type: none;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+main .seccionProductos .conteinerCategorias .tarjetaCategoria .botonTarjetas {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #9d9d9d;
+  border: 1px #ffffff solid;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main .seccionProductos .conteinerCategorias .tarjetaCategoria .botonTarjetas:hover {
+  opacity: 1;
+  border: 1px #9d9d9d solid;
 }
 
 main .comoComprar_titulo {
@@ -248,6 +308,8 @@ main .comoComprar_titulo {
   background-color: #9d9d9d;
   opacity: 0.7;
   font-family: "Josefin Sans", sans-serif;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 main .comoComprar {
@@ -289,6 +351,14 @@ main .comoComprar .comoComprar__bloque:hover {
   transition: 0.5s;
   -webkit-box-shadow: 3px 3px 15px #9d9d9d;
           box-shadow: 3px 3px 15px #9d9d9d;
+}
+
+main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+  border-bottom-left-radius: 15px;
+}
+
+main .comoComprar .comoComprar__bloque.bloqueDerecho {
+  border-bottom-right-radius: 15px;
 }
 
 main .comoComprar .comoComprar__bloque img {
@@ -484,17 +554,19 @@ main .offcanvas__carrito .body__carrito .total__carrito span {
   font-weight: 700;
 }
 
-main .offcanvas__carrito .body__carrito .boton_continuar {
+main .offcanvas__carrito .body__carrito .continuarCompra {
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
   padding: 0.5rem;
   border: 1px #ffffff solid;
   background-color: #9d9d9d;
-  color: #ffffff;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   opacity: 0.7;
 }
 
-main .offcanvas__carrito .body__carrito .boton_continuar:hover {
+main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   opacity: 1;
   border: 1px #9d9d9d solid;
   -webkit-transition: 0.5s;
@@ -529,7 +601,13 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 
 .main__nosotros section .conteinerNosotros .conteinerNosotros__fotoNosotros {
   width: 100%;
-  border: 1px #9d9d9d solid;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
+  border-top-right-radius: 20px;
+}
+
+.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoNosotros img {
+  border-top-right-radius: 20px;
 }
 
 .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
@@ -541,10 +619,12 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   font-weight: 500;
   word-spacing: 0.3rem;
   padding: 3rem;
-  margin: 3rem 0rem 0rem 0rem;
+  margin: 1.5rem 0rem 0rem 0rem;
   background-image: url(../media/img/fondo2.jpg);
   background-size: cover;
-  border: 1px #9d9d9d solid;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
+  border-bottom-left-radius: 20px;
 }
 
 .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros span {
@@ -553,8 +633,14 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 
 .main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid img {
   height: 55vh;
-  margin: 3rem 0rem 0rem 0rem;
-  border: 1px #9d9d9d solid;
+  margin: 1.5rem 0rem 0rem 0rem;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
+  border-bottom-right-radius: 20px;
+}
+
+.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid img img {
+  border-bottom-right-radius: 20px;
 }
 
 .main__productos {
@@ -564,11 +650,12 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 
 .main__productos .banner__catalogo a img {
   width: 100%;
-  border-bottom: 1px #9d9d9d solid;
+  -webkit-box-shadow: 0px 5px 50px #9d9d9d;
+          box-shadow: 0px 5px 50px #9d9d9d;
 }
 
 .main__productos h1 {
-  margin: 1rem 3rem 0rem 3rem;
+  margin: 2rem 3rem 0rem 3rem;
   padding: 0.5rem 2rem;
   text-align: center;
   font-size: 2.3rem;
@@ -578,6 +665,8 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   background-color: #9d9d9d;
   opacity: 0.7;
   font-family: "Josefin Sans", sans-serif;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
 }
 
 .main__productos .comoComprar {
@@ -619,6 +708,14 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   transition: 0.5s;
   -webkit-box-shadow: 3px 3px 15px #9d9d9d;
           box-shadow: 3px 3px 15px #9d9d9d;
+}
+
+.main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+  border-bottom-left-radius: 15px;
+}
+
+.main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+  border-bottom-right-radius: 15px;
 }
 
 .main__productos .comoComprar .comoComprar__bloque img {
@@ -741,7 +838,6 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
   margin-bottom: 1.5rem;
   background-color: #ffffff;
-  border: 1px #9d9d9d solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -760,6 +856,8 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+          box-shadow: 3px 3px 15px #9d9d9d;
 }
 
 .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto img {
@@ -826,8 +924,9 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   margin-right: 0.5rem;
 }
 
-.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .boton__agregar, .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto main .seccionProductos .conteinerCategorias button, main .seccionProductos .conteinerCategorias .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto button {
-  margin: 0.5rem;
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .boton__agregar {
+  margin-top: 0.5rem;
+  width: 100%;
   padding: 0.5rem;
   background-color: #9d9d9d;
   border: 1px #ffffff solid;
@@ -836,11 +935,39 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   text-align: center;
   color: #ffffff;
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .boton__agregar:hover, .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto main .seccionProductos .conteinerCategorias button:hover, main .seccionProductos .conteinerCategorias .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto button:hover {
+.main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .boton__agregar:hover {
   opacity: 1;
   border: 1px #9d9d9d solid;
+}
+
+.main__productos .toast {
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+  margin-right: 4rem;
+}
+
+.main__productos .toast .toast-header {
+  background-color: #9d9d9d;
+  color: #ffffff;
+}
+
+.main__productos .toast .logoToast {
+  width: 25px;
+}
+
+.main__productos .toast .botonCerrar {
+  background-color: #9d9d9d;
+  border: none;
+}
+
+.main__productos .toast .botonCerrar img {
+  width: 15px;
 }
 
 .mainContacto {
@@ -871,46 +998,132 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
 }
 
 .mainContacto section .mainContacto__contactanos form fieldset {
-  margin: 5vh auto;
-  padding: 5vh auto;
-  text-align: center;
+  border: 1px solid black;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 1rem auto;
   border: none;
 }
 
-.mainContacto section .mainContacto__contactanos form fieldset label {
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario {
+  width: 50%;
+  padding: 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario label {
+  text-align: left;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  margin-top: 1rem;
 }
 
-.mainContacto section .mainContacto__contactanos form fieldset input {
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario input {
+  opacity: 0.7;
+  border: none;
+  width: 100%;
+  height: 2rem;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   padding: 0.3rem;
+  -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+          box-shadow: 3px 3px 15px #9d9d9d;
+  border-radius: 5px;
 }
 
-.mainContacto section .mainContacto__contactanos form fieldset .inputRadio {
-  font-family: "Josefin Sans", sans-serif;
-  word-spacing: 1rem;
-  font-size: 1rem;
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario input:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.mainContacto section .mainContacto__contactanos form fieldset .motivoConsulta {
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .motivoConsulta {
+  opacity: 0.7;
+  border: none;
+  width: 100%;
+  height: 2rem;
   font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
   font-size: 1rem;
   padding: 0.3rem;
+  -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+          box-shadow: 3px 3px 15px #9d9d9d;
+  border-radius: 5px;
 }
 
-.mainContacto section .mainContacto__contactanos form fieldset .textAreaFormulario {
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .motivoConsulta:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .checkbox {
+  width: 15px;
+  height: 1rem;
+  margin: 2rem 0rem 0rem 1rem;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .textAreaFormulario {
+  opacity: 0.6;
+  border: none;
+  width: 100%;
   font-family: "Josefin Sans", sans-serif;
-  margin: 1rem;
   padding: 0.5rem;
   font-size: 1rem;
+  -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+          box-shadow: 3px 3px 15px #9d9d9d;
+  border-radius: 5px;
 }
 
-.mainContacto section .mainContacto__contactanos form fieldset .borrarEnviar {
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .textAreaFormulario:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .borrarEnviar {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   font-weight: 700;
   font-size: 1rem;
-  padding: 0.3rem;
+}
+
+.mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .borrarEnviar input {
+  width: 45%;
+  background-color: #9d9d9d;
+  color: #ffffff;
+  margin: 1rem 0rem;
 }
 
 .main__ayuda h1 {
@@ -922,31 +1135,13 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   padding: 1rem 3rem 1rem 3rem;
   opacity: 0.8;
   text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .main__ayuda .conteiner__ayuda {
   padding: 1rem 3rem 3rem 3rem;
   opacity: 0.8;
-}
-
-.main__ayuda .conteiner__ayuda .boton__pregunta {
-  width: 100%;
-  background-color: #f8f0df;
-  text-align: left;
-  color: #000000;
-  border: none;
-  padding: 1rem;
-}
-
-.main__ayuda .conteiner__ayuda .boton__pregunta--dif {
-  background-color: #fefbf3;
-}
-
-.main__ayuda .conteiner__ayuda .boton__pregunta:hover {
-  background-color: #9d9d9d;
-  color: #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .main__ayuda .conteiner__ayuda .acordeon__ayuda {
@@ -980,25 +1175,278 @@ main .offcanvas__carrito .body__carrito .boton_continuar:hover {
   font-weight: 700;
 }
 
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta {
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta--primera {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta--ultima {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta .boton__pregunta {
+  width: 100%;
+  background-color: #f8f0df;
+  text-align: left;
+  color: #000000;
+  border: none;
+  padding: 1rem;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta .boton__pregunta--dif {
+  background-color: #fefbf3;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta .boton__pregunta--primera {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta .boton__pregunta--ultima {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.main__ayuda .conteiner__ayuda .acordeon__ayuda .acordeon__pregunta .boton__pregunta:hover {
+  background-color: #9d9d9d;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .main__botik {
   background-image: url(../media/img/fondoMosaico.png);
   background-repeat: repeat;
+  padding-bottom: 3rem;
 }
 
-.main__botik .botik__h1 {
+.main__botik .banner__catalogo a img {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 50px #9d9d9d;
+          box-shadow: 0px 5px 50px #9d9d9d;
+}
+
+.main__botik .comercioAmigo {
+  background-image: url(../media/img/fondo3.jpg);
+  background-position: center;
+  -webkit-box-shadow: 0px 0px 30px #9d9d9d;
+          box-shadow: 0px 0px 30px #9d9d9d;
+  margin: 3rem 3rem 0rem 3rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.main__botik .comercioAmigo h1 {
+  padding: 1rem;
   font-family: "Josefin Sans", sans-serif;
-  font: 0.5rem;
-  margin: 0rem;
-  padding: 2rem 2rem 0rem 2rem;
+  font-size: 2.5rem;
+  word-spacing: 0.5rem;
 }
 
-.main__botik .botik__p {
+.main__botik .comercioAmigo h2 {
+  padding: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+}
+
+.main__botik .comercioAmigo p {
+  padding: 1rem;
   font-family: "Bodoni Moda", serif;
-  padding: 1rem 2rem 2rem 2rem;
-  margin: 0rem;
   font-size: 1.2rem;
+  word-spacing: 0.3rem;
   font-weight: 500;
-  word-spacing: 0.2rem;
+}
+
+.main__botik .comercioAmigo p span {
+  font-weight: 700;
+}
+
+.main__botik .comercioAmigo .videoPuro {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0rem 1rem;
+}
+
+.main__botik .comercioAmigo .videoPuro iframe {
+  border-radius: 15px;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 20px #9d9d9d;
+          box-shadow: 10px 10px 20px #9d9d9d;
+}
+
+.main__botik .comercioAmigo .conteinerSellos {
+  margin: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  background-color: #ffffff;
+  opacity: 0.6;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main__botik .comercioAmigo .conteinerSellos .tarjetaSellos:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+  background-color: #fefbf3;
+}
+
+.main__botik .comercioAmigo .conteinerSellos .tarjetaSellos img {
+  width: 80px;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.main__botik .comercioAmigo .conteinerSellos .tarjetaSellos h3 {
+  font-family: "Josefin Sans", sans-serif;
+  word-spacing: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.main__botik .comercioAmigo .conteinerSellos .tarjetaSellos p {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.1rem;
+  margin-bottom: 0rem;
+}
+
+.body404 {
+  background-color: #ffffff;
+}
+
+.body404 .main404 {
+  margin: 0rem auto;
+  background-image: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body404 .main404 .info404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body404 .main404 .info404 .titulo404 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1rem;
+  font-size: 8rem;
+  margin: 0rem auto;
+  text-align: center;
+}
+
+.body404 .main404 .info404 h2 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+  margin-top: -2rem;
+  padding: 0rem;
+  text-align: center;
+}
+
+.body404 .main404 .info404 p {
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.body404 .main404 .info404 p span {
+  font-weight: 600;
+}
+
+.body404 .main404 .info404 a button {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #9d9d9d;
+  border: 1px #ffffff solid;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+  margin-top: 0rem;
+}
+
+.body404 .main404 .info404 a button:hover {
+  opacity: 1;
+  border: 1px #9d9d9d solid;
+}
+
+.body404 .main404 img {
+  margin: 0rem auto;
+  width: 550px;
 }
 
 footer {
@@ -1021,6 +1469,13 @@ footer .conteiner__footer {
           justify-content: flex-start;
   line-height: 1rem;
   padding: 1rem 2rem 0rem 2rem;
+}
+
+footer .conteiner__footer--404 {
+  padding: 1rem 3rem 1rem 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer .conteiner__footer ul {
@@ -1049,6 +1504,40 @@ footer .conteiner__footer .footerSecciones {
   padding: 1rem 4rem;
 }
 
+footer .conteiner__footer .footerSecciones--404 {
+  padding: 0rem;
+}
+
+footer .conteiner__footer .footerSecciones--404 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer .conteiner__footer .footerSecciones--404 ul li {
+  padding-right: 1rem;
+}
+
+footer .conteiner__footer .footerSecciones--404 ul .seccionContacto {
+  border-right: 1px solid #ffffff;
+}
+
+footer .conteiner__footer .footerSecciones--404 ul .seccionAyuda {
+  padding-left: 1rem;
+}
+
+footer .conteiner__footer .footerSecciones--404 p {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+
 footer .conteiner__footer .footerContacto {
   padding: 1rem 3rem 2rem 3rem;
   border-left: 1px solid #ffffff;
@@ -1065,6 +1554,15 @@ footer .conteiner__footer .footerContacto li img {
 
 footer .conteiner__footer .footerRedes {
   padding: 1rem 2rem 2rem 3rem;
+}
+
+footer .conteiner__footer .footerRedes--404 {
+  padding-top: 0.5rem;
+}
+
+footer .conteiner__footer .footerRedes--404 a img {
+  width: 1.8rem;
+  margin: 0rem 0.5rem;
 }
 
 footer .conteiner__footer .footerRedes img {

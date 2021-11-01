@@ -31,12 +31,11 @@
                 </a>
             </div>
             <div>
-                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse menuNavbar" id="navbarNav">
+                <div class="collapse navbar-collapse ml-auto menuNavbar" id="navbarNav">
                     <ul class="navbar-nav">
                         <li>
                             <a class="nav-link link__propio" aria-current="page" href="nosotros.html">NOSOTROS</a>
@@ -58,7 +57,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>    
         </nav>
     </header>
     <!--fin del header-->
@@ -89,8 +88,8 @@
                     </div>
                     <div class="boton__eliminarProducto">
                         <button type="button" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions">
-                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
                         </button>
                         <p class="precio__producto"><strong>$ 1390,00</strong></p>
                     </div>
@@ -107,8 +106,8 @@
                     </div>
                     <div class="boton__eliminarProducto">
                         <button type="button" data-bs-target="#offcanvasWithBothOptions"
-                            aria-controls="offcanvasWithBothOptions">
-                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito">
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
                         </button>
                         <p class="precio__producto"><strong>$ 760,00</strong></p>
                     </div>
@@ -120,7 +119,7 @@
                     <p>Envío: (A definir)</p>
                     <p><span>TOTAL: $ 2150,00 + Envío</span></p>
                 </div>
-                <button class="boton_continuar">Continuar ></button>
+                <a href="404.html" class="continuarCompra">Continuar ></a>
             </div>
         </div>
         <!--fin offcanvas carrito-->
@@ -138,7 +137,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <video src="media/video/video_carrusel.mp4" preload="auto" autoplay loop class="d-block videoBanner"></video>
+                    <video src="media/video/video_carrusel.mp4" autoplay preload="auto" autoplay loop class="d-block videoBanner"></video>
                 </div>
                 <div class="carousel-item">
                     <img src="media/img/banner3.jpg" class="d-block" alt="Banner Flores">
@@ -174,7 +173,7 @@
             <section>
                 <div class="feedInsta">
                     <div class="carruselInsta"
-                    loading="lazy"
+                    loading="preload"
                     data-mc-src="3492302b-e930-4f83-b174-4dd08ccae3b2#instagram"></div>
                     <div class="seguinosInstagram"><a href="https://www.instagram.com/limonjapon/" target="_blank"><img src="media/img/logoInstagramNegro.png"
                     alt="Logo Instagram"/>Seguinos en Instagram</a></div>
@@ -187,124 +186,100 @@
                 <p>Te mostramos algunas de nuestras categorías principales:</p>
             </div>
             <div class="conteinerCategorias">
-                <div class="card tarjeta_producto">
-                    <img src="media/img/cosmetica.jpg" class="card-img-top rounded-bottom" alt="Imagen Cosmética">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__tarjeta">COSMÉTICA</h3>
-                        <ul>
-                            <li>Jabones Naturales y Vegetales</li>
-                            <li>Bio Champú y Acondicionador</li>
-                            <li>Cremas Corportales y Faciales</li>
-                            <li>Lechas Balsámicas</li>
-                            <li>Ungüentos</li>
-                            <li>Oleum 33</li>
-                        </ul>
-                        <a href="productos.html#cosmetica"><button type="button"
-                                class="btn btn-outline-secondary botonTarjetas">+ Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/cosmetica.jpg" alt="Imagen Cosmética">
+                    <h3>COSMÉTICA</h3>
+                    <ul>
+                        <li>Jabones Naturales</li>
+                        <li>Bio Champú</li>
+                        <li>Cremas Corportales</li>
+                        <li>Ungüentos</li>
+                        <li>Oleum 33</li>
+                    </ul>
+                    <a href="productos.html#cosmetica"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="card tarjeta_producto">
-                    <img src="media/img/sahumerios.jpg" class="card-img-top" alt="Imagen Sahumerios">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__carta">SAHUMERIOS</h3>
-                        <ul>
-                            <li>Variedad en aromas</li>
-                            <li>Bombitas Defumadoras</li>
-                            <li>Porta sahumerios</li>
-                            <li>Hornitos</li>
-                            <li>Palo Santo</li>
-                            <li>Sahumos</li>
-                        </ul>
-                        <a href="productos.html#sahumerios"><button type="button"
-                                class="btn btn-outline-secondary botonTarjetas">+ Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/sahumerios.jpg" alt="Imagen Sahumerios">
+                    <h3>SAHUMERIOS</h3>
+                    <ul>
+                        <li>Variedad en aromas</li>
+                        <li>Bombitas Defumadoras</li>
+                        <li>Porta sahumerios</li>
+                        <li>Hornitos</li>
+                        <li>Sahumos</li>
+                    </ul>
+                    <a href="productos.html#sahumerios"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="card tarjeta_producto">
-                    <img src="media/img/hogar.jpg" class="card-img-top" alt="Imagen Hogar">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__carta">HOGAR</h3>
-                        <ul>
-                            <li>Almohadillas Terapéuticas</li>
-                            <li>Envoltorios Ecológicos</li>
-                            <li>Cepillos de Bambú</li>
-                            <li>Esponjas Vegetales</li>
-                            <li>Terrarios</li>
-                        </ul>
-                        <a href="productos.html#hogar"><button type="button" class="btn btn-outline-secondary botonTarjetas">+
-                                Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/hogar.jpg" alt="Imagen Hogar">
+                    <h3>HOGAR</h3>
+                    <ul>
+                        <li>Almohadillas Terapéuticas</li>
+                        <li>Envoltorios Ecológicos</li>
+                        <li>Cepillos de Bambú</li>
+                        <li>Esponjas Vegetales</li>
+                        <li>Terrarios</li>
+                    </ul>
+                    <a href="productos.html#hogar"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="card tarjeta_producto">
-                    <img src="media/img/altar.jpg" class="card-img-top" alt="Imagen Altar">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__carta">ALTAR</h3>
-                        <ul>
-                            <li>Fuentes de Humo</li>
-                            <li>Lamparas de Sal</li>
-                            <li>Japa Mala</li>
-                            <li>Ganesha</li>
-                            <li>Buda</li>
-                        </ul>
-                        <a href="productos.html#altar"><button type="button" class="btn btn-outline-secondary botonTarjetas">+
-                                Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/altar.jpg" alt="Imagen Altar">
+                    <h3>ALTAR</h3>
+                    <ul>
+                        <li>Fuentes de Humo</li>
+                        <li>Lamparas de Sal</li>
+                        <li>Japa Mala</li>
+                        <li>Ganesha</li>
+                        <li>Buda</li>
+                    </ul>
+                    <a href="productos.html#altar"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="card tarjeta_producto">
-                    <img src="media/img/hebras.jpg" class="card-img-top" alt="Imagen Té en Hebras">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__carta">TÉ EN HEBRAS</h3>
-                        <ul>
-                            <li>Variedad en sabores</li>
-                            <li>Teteras y Tazas</li>
-                            <li>Infusores</li>
-                        </ul>
-                        <a href="productos.html#teEnHebras"><button type="button"
-                                class="btn btn-outline-secondary botonTarjetas">+ Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/hebras.jpg" alt="Imagen Té en Hebras">
+                    <h3>TÉ EN HEBRAS</h3>
+                    <ul>
+                        <li>Variedad en sabores</li>
+                        <li>Teteras y Tazas</li>
+                        <li>Infusores</li>
+                    </ul>
+                    <a href="productos.html#teEnHebras"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="card tarjeta_producto">
-                    <img src="media/img/aromatizantes.jpg" class="card-img-top" alt="Imagen Aromatizantes">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__carta">AROMATIZANTES</h3>
-                        <ul>
-                            <li>Difusores</li>
-                            <li>Aromatizantes</li>
-                            <li>Ambiente y Textil</li>
-                        </ul>
-                        <a href="productos.html#aromatizantes"><button type="button"
-                                class="btn btn-outline-secondary botonTarjetas">+ Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/aromatizantes.jpg" alt="Imagen Aromatizantes">
+                    <h3>AROMATIZANTES</h3>
+                    <ul>
+                        <li>Difusores</li>
+                        <li>Ambiente y Textil</li>
+                        <li>Aromatizantes</li>
+                    </ul>
+                    <a href="productos.html#aromatizantes"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="card tarjeta_producto">
-                    <img src="media/img/velas.jpg" class="card-img-top" alt="Imagen Velas">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__carta">VELAS</h3>
-                        <ul>
-                            <li>Velas de Soja</li>
-                            <li>Velas en vaso de vidrio</li>
-                            <li>Velas Cubos</li>
-                        </ul>
-                        <a href="productos.html#velas"><button type="button" class="btn btn-outline-secondary botonTarjetas">+
-                                Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/velas.jpg" alt="Imagen Velas">
+                    <h3>VELAS</h3>
+                    <ul>
+                        <li>Velas de Soja</li>
+                        <li>Velas en vaso de vidrio</li>
+                        <li>Velas Cubos</li>
+                    </ul>
+                    <a href="productos.html#velas"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="card tarjeta_producto">
-                    <img src="media/img/yoga.jpg" class="card-img-top" alt="Imagen Yoga Mat">
-                    <div class="card-body">
-                        <h3 class="card-title titulo__carta">YOGA</h3>
-                        <ul>
-                            <li>Yoga Mat</li>
-                        </ul>
-                        <a href="productos.html#yoga"><button type="button" class="btn btn-outline-secondary botonTarjetas">+
-                                Productos</button></a>
-                    </div>
+                <div class="tarjetaCategoria">
+                    <img src="media/img/yoga.jpg" alt="Imagen Yoga Mat">
+                    <h3>YOGA</h3>
+                    <ul>
+                        <li>Yoga Mat</li>
+                        <li>PVC</li>
+                        <li>TPE</li>
+                    </ul>
+                    <a href="productos.html#yoga"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
             </div>
         </div>
         <!--inicio sección como comprar-->
         <h2 class="comoComprar_titulo">¿Cómo comprar?</h2>
         <section class="comoComprar">
-            <div class="comoComprar__bloque">
+            <div class="comoComprar__bloque bloqueIzquierdo">
                 <img src="media/img/ComoComprar1.png" alt="Icono Lupa">
                 <p><span>¡Elegí el producto que más te guste y agregalo al carrito!</span></p>
                 <p>En la sección Productos podés seleccionar la cantidad y la variedad de lo que quieras. </p>
@@ -326,7 +301,7 @@
                 <p><span>Seleccioná Envío o Retiro</span></p>
                 <p>Podés elegir recibirlo en tu casa o retiro en alguno de nuestros puntos habilitados.</p>
             </div>
-            <div class="comoComprar__bloque">
+            <div class="comoComprar__bloque bloqueDerecho">
                 <img src="media/img/ComoComprar5.png" alt="Icono Mano OK">
                 <p><span>¡Confirmá tu pedido!</span></p>
                 <p>Te vamos a envíar a tu mail toda la información necesaria, comprobande y n° de pedido (para el seguimiento o
@@ -415,5 +390,6 @@
     src="https://cdn2.woxo.tech/a.js#615391bb03625a0016d334fa" 
     async data-usrc>
     </script>
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
 </body>
 </html>
