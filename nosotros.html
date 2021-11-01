@@ -24,37 +24,32 @@
 <body>
     <!--inicio de header-->
     <header id="#top">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light conteiner">
-            <div class="logoNavbar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid conteinterNav">
                 <a class="navbar-brand" href="index.html">
                     <img src="media/img/logo3.png" alt="Logo Limón Japón">
                 </a>
-            </div>
-            <div>
-                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                <button class="navbar-toggler collapsed botonHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse menuNavbar" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="navbar-collapse justify-content-end collapse navbarSecciones" id="menu">
+                    <ul class="navbar-nav justify-content-end">
                         <li>
-                            <a class="nav-link link__propio" aria-current="page" href="index.html">HOME</a>
-                        </li>
-                        <li>
-                            <a class="nav-link link__propio" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                            <a class="nav-link" aria-current="page" href="nosotros.html">NOSOTROS</a>
                         </li>
                         <li>
-                            <a class="nav-link link__propio" href="productos.html">PRODUCTOS</a>
+                            <a class="nav-link" href="productos.html">PRODUCTOS</a>
                         </li>
                         <li>
-                            <a class="nav-link link__propio" href="botikpuro.html">BOTI-K PURO</a>
+                            <a class="nav-link" href="botikpuro.html">BOTI-K PURO</a>
                         </li>
-                        <li class="menuNavbar__contacto">
-                            <a class="nav-link link__propio" href="contacto.html">CONTACTO</a>
+                        <li class="linkContacto">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
-                        <li class="boton__carrito">
-                            <button class="boton__carrito" type="button" data-bs-toggle="offcanvas"
+                        <li class="carrito">
+                            <button class="botonCarrito" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                                 <img src="media/img/carrito2.png" alt="Icono Carrito">
                             </button>

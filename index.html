@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css"/>
     <link rel="shortcut icon" href="media/img/favicon.png">
     <link rel="stylesheet" href="css/estilo.css">
     <title>Limón Japón</title>
@@ -24,40 +25,39 @@
 <body>
     <!--inicio de header-->
     <header id="#top">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light conteiner">
-            <div class="logoNavbar">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid conteinterNav">
                 <a class="navbar-brand" href="index.html">
                     <img src="media/img/logo3.png" alt="Logo Limón Japón">
                 </a>
-            </div>
-            <div>
-                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed botonHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse ml-auto menuNavbar" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="navbar-collapse justify-content-end collapse navbarSecciones" id="menu">
+                    <ul class="navbar-nav justify-content-end">
                         <li>
-                            <a class="nav-link link__propio" aria-current="page" href="nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li>
-                            <a class="nav-link link__propio" href="productos.html">PRODUCTOS</a>
+                            <a class="nav-link" aria-current="page" href="nosotros.html">NOSOTROS</a>
                         </li>
                         <li>
-                            <a class="nav-link link__propio" href="botikpuro.html">BOTI-K PURO</a>
+                            <a class="nav-link" href="productos.html">PRODUCTOS</a>
                         </li>
-                        <li class="menuNavbar__contacto">
-                            <a class="nav-link link__propio" href="contacto.html">CONTACTO</a>
+                        <li>
+                            <a class="nav-link" href="botikpuro.html">BOTI-K PURO</a>
                         </li>
-                        <li class="boton__carrito">
-                            <button class="boton__carrito" type="button" data-bs-toggle="offcanvas"
+                        <li class="linkContacto">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="carrito">
+                            <button class="botonCarrito" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                                 <img src="media/img/carrito2.png" alt="Icono Carrito">
                             </button>
                         </li>
                     </ul>
                 </div>
-            </div>    
+            </div>
         </nav>
     </header>
     <!--fin del header-->
@@ -172,9 +172,7 @@
             </section>
             <section>
                 <div class="feedInsta">
-                    <div class="carruselInsta"
-                    loading="preload"
-                    data-mc-src="3492302b-e930-4f83-b174-4dd08ccae3b2#instagram"></div>
+                    <div loading="preload" data-mc-src="6a0fce1f-d3ca-422a-a4bc-7e674d1fe30d#instagram"></div>
                     <div class="seguinosInstagram"><a href="https://www.instagram.com/limonjapon/" target="_blank"><img src="media/img/logoInstagramNegro.png"
                     alt="Logo Instagram"/>Seguinos en Instagram</a></div>
                 </div>
@@ -186,7 +184,7 @@
                 <p>Te mostramos algunas de nuestras categorías principales:</p>
             </div>
             <div class="conteinerCategorias">
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/cosmetica.jpg" alt="Imagen Cosmética">
                     <h3>COSMÉTICA</h3>
                     <ul>
@@ -198,7 +196,7 @@
                     </ul>
                     <a href="productos.html#cosmetica"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/sahumerios.jpg" alt="Imagen Sahumerios">
                     <h3>SAHUMERIOS</h3>
                     <ul>
@@ -210,7 +208,7 @@
                     </ul>
                     <a href="productos.html#sahumerios"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/hogar.jpg" alt="Imagen Hogar">
                     <h3>HOGAR</h3>
                     <ul>
@@ -222,7 +220,7 @@
                     </ul>
                     <a href="productos.html#hogar"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/altar.jpg" alt="Imagen Altar">
                     <h3>ALTAR</h3>
                     <ul>
@@ -234,7 +232,7 @@
                     </ul>
                     <a href="productos.html#altar"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/hebras.jpg" alt="Imagen Té en Hebras">
                     <h3>TÉ EN HEBRAS</h3>
                     <ul>
@@ -244,7 +242,7 @@
                     </ul>
                     <a href="productos.html#teEnHebras"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/aromatizantes.jpg" alt="Imagen Aromatizantes">
                     <h3>AROMATIZANTES</h3>
                     <ul>
@@ -254,7 +252,7 @@
                     </ul>
                     <a href="productos.html#aromatizantes"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/velas.jpg" alt="Imagen Velas">
                     <h3>VELAS</h3>
                     <ul>
@@ -264,7 +262,7 @@
                     </ul>
                     <a href="productos.html#velas"><button type="button" class="botonTarjetas">+ Productos</button></a>
                 </div>
-                <div class="tarjetaCategoria">
+                <div class="wow animate__animated animate__fadeInDown tarjetaCategoria">
                     <img src="media/img/yoga.jpg" alt="Imagen Yoga Mat">
                     <h3>YOGA</h3>
                     <ul>
@@ -386,10 +384,13 @@
     <!--final del footer-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script 
     src="https://cdn2.woxo.tech/a.js#615391bb03625a0016d334fa" 
     async data-usrc>
     </script>
-    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
 </body>
 </html>

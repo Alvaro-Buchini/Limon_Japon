@@ -23,35 +23,36 @@
 
 <body class="body404">
     <!--inicio de header-->
-    <header id="#top" class="header404">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light conteiner">
-            <div class="logoNavbar">
+    <header id="#top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid conteinterNav">
                 <a class="navbar-brand" href="index.html">
                     <img src="media/img/logo3.png" alt="Logo Limón Japón">
                 </a>
-            </div>
-            <div>
-                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                <button class="navbar-toggler collapsed botonHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse menuNavbar" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="navbar-collapse justify-content-end collapse navbarSecciones" id="menu">
+                    <ul class="navbar-nav justify-content-end">
                         <li>
-                            <a class="nav-link link__propio" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link" aria-current="page" href="nosotros.html">NOSOTROS</a>
                         </li>
                         <li>
-                            <a class="nav-link link__propio" aria-current="page" href="nosotros.html">NOSOTROS</a>
+                            <a class="nav-link" href="productos.html">PRODUCTOS</a>
                         </li>
                         <li>
-                            <a class="nav-link link__propio" href="productos.html">PRODUCTOS</a>
+                            <a class="nav-link" href="botikpuro.html">BOTI-K PURO</a>
                         </li>
-                        <li>
-                            <a class="nav-link link__propio" href="botikpuro.html">BOTI-K PURO</a>
+                        <li class="linkContacto">
+                            <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
-                        <li>
-                            <a class="nav-link link__propio" href="contacto.html">CONTACTO</a>
+                        <li class="carrito">
+                            <button class="botonCarrito" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <img src="media/img/carrito2.png" alt="Icono Carrito">
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -61,6 +62,66 @@
     <!--fin del header-->
     <!--inicio del main-->
     <main class="main404">
+        <!--inicio offcanvas carrito-->
+        <div class="offcanvas offcanvas-end offcanvas__carrito" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header header__carrito">
+                <p class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                    MI CARRITO
+                </p>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body body__carrito">
+                <div class="misProductos__carrito">
+                    <p>Mis productos:</p>
+                </div>
+                <div class="producto__carrito">
+                    <div>
+                        <img src="media/img/mercado/cosmetica4.png" alt="Img Producto 1">
+                    </div>
+                    <div class="detalles__productos">
+                        <p><span>Kit Octogonal</span></p>
+                        <p>1 Ungüento Balsámico / 1 Jabón 100% Vegetal / 1 Bálsamo Labial.</p>
+                        <label for="tentacles">Cantidad:</label>
+                        <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="1">
+                    </div>
+                    <div class="boton__eliminarProducto">
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
+                        </button>
+                        <p class="precio__producto"><strong>$ 1390,00</strong></p>
+                    </div>
+                </div>
+                <div class="producto__carrito">
+                    <div>
+                        <img src="media/img/mercado/sahumerios7.png" alt="Img Producto 2">
+                    </div>
+                    <div class="detalles__productos">
+                        <p><span>Carbones Defumación Sagrada Madre</span></p>
+                        <p>(Caja x 4 un.) / <strong>Variedad: 7 Poderes</strong></p>
+                        <label for="tentacles">Cantidad:</label>
+                        <input type="number" id="tentacles" name="tentacles" min="1" max="10" placeholder="2">
+                    </div>
+                    <div class="boton__eliminarProducto">
+                        <button type="button" data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"><a href="404.html">
+                            <img src="media/img/eliminarProducto.png" alt="Icono Eliminar de Carrito"></a>
+                        </button>
+                        <p class="precio__producto"><strong>$ 760,00</strong></p>
+                    </div>
+                </div>
+                <div class="total__carrito">
+                    <p><strong>Valor de la compra: $ 2150,00</strong></p>
+                    <p>Descuentos: $ 0,00</p>
+                    <p>Sub-total: $ 2150,00</p>
+                    <p>Envío: (A definir)</p>
+                    <p><span>TOTAL: $ 2150,00 + Envío</span></p>
+                </div>
+                <a href="404.html" class="continuarCompra">Continuar ></a>
+            </div>
+        </div>
+        <!--fin offcanvas carrito-->
         <div class="info404">
             <h1 class="titulo404">404</h1>
             <h2>¡OOPS!</h2>

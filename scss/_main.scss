@@ -46,18 +46,19 @@ main{
         box-shadow: 5px 5px 20px $color_gris;
         width: 95%;
         margin: 2rem auto;
+        padding: 2rem 0rem;
         .carruselInsta{
-            padding: 1rem 0rem;
-            width: 100%;
+            margin: 0px auto;
+            width: 90%;
         }
         .seguinosInstagram{
             width: 25rem;
-            padding: 1rem 2rem;
+            padding: 0.5rem 2rem;
             margin: 2rem auto;
             background-image: url(../media/img/fondo2.jpg);
             background-position: bottom;
             position: absolute;
-            top: 1085px;
+            top: 1195px;
             left: 472px;
             a{
                 font-family: $titulos;
@@ -167,7 +168,7 @@ main{
         img{
             width: 70px;
             position: fixed;
-            top: 75%;
+            top: 70%;
             right: -13px;
             z-index: 3 !important;
             transition: 0.5s;
@@ -182,7 +183,7 @@ main{
         img{
             width: 140px;
             position: fixed;
-            top: 74%;
+            top: 69%;
             left: -85px;
             z-index: 3 !important;
             transition: 0.5s;
@@ -197,7 +198,7 @@ main{
         img{
             width: 140px;
             position: fixed;
-            top: 86%;
+            top: 81%;
             right: -82px;
             z-index: 3 !important;
             transition: 0.5s;
@@ -209,7 +210,7 @@ main{
         }
     }
     .offcanvas__carrito{
-        width: 35%;
+        width: 40%;
         .header__carrito{
             background-color: $color_gris;
             color: #ffffff;
@@ -572,15 +573,14 @@ main{
             form{
                 fieldset{
                     border: 1px solid black;
-                    width: 75%;
                     display: flex;
                     flex-flow: row wrap;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: flex-start;
                     margin: 1rem auto;
                     border: none;
                     .bloqueFormulario{
-                        width: 50%;
+                        width: 450px;
                         padding: 0rem 1rem;
                         display: flex;
                         flex-flow: column nowrap;
@@ -636,6 +636,7 @@ main{
                             font-size: 1rem;
                             box-shadow: 3px 3px 15px $color_gris;
                             border-radius: 5px;
+                            resize: none;
                             &:hover{
                                 opacity: 1;
                                 transition: 0.5s;

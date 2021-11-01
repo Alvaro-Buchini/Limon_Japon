@@ -1,62 +1,69 @@
 // estilo header //
-header{
-    position: sticky !important;
-    top: 0px;
-    z-index: 5 !important;
-    border-bottom: 1px solid #000000;
-    nav{
-        background-color: #ffffff !important;
-        &.conteiner{
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
+header {
+  border-bottom: 1px solid #000000;
+  position: sticky;
+  top: 0px;
+  z-index: 5 !important;
+  nav {
+      height: 70px;
+    background-color: #ffffff;
+    .conteinterNav {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      a {
+        img {
+          margin-left: 15px;
+          width: 160px;
         }
-        .logoNavbar{
-            a{
-                img{
-                    margin-left: 2vw;
-                    width: 10rem;
-                }
-            }
-        } 
-        .botonHamburguesa{
-            width: 10rem;
-            margin-right: 1rem;
+      }
+      .navbarSecciones {
+        ul {
+          li {
             padding: 0rem 1rem;
-            background-color: $color_secundario;
-        }
-        .menuNavbar{
-            ul{
-                padding: 0rem 1rem;
-                li{
-                    padding: 0rem 1rem;
-                    border-left: 1px solid $color_gris;
-                    font-family: $titulos;
-                    &:hover{
-                        background-color: $color_gris;
-                        transition: 0.5s;
-                    }
-                    a:hover{
-                        color: #ffffff !important;               
-                    }
-                }
-                .menuNavbar__contacto{
-                    border-right: 1px solid $color_gris;
-                }
-                .boton__carrito{
-                    border: none;
-                    margin: 0rem 0.5rem;
-                    opacity: 0.8;
-                    &:hover{
-                        background-color: #ffffff;
-                        transform: scale(1.05,1.05);
-                        opacity: 1;
-                    }
-                    img{
-                        width: 2.2rem;
-                    }
-                }
+            border-left: 1px solid $color_gris;
+            font-family: $titulos;
+            &:hover {
+              background-color: $color_gris;
+              transition: 0.5s;
+              a {
+                color: #ffffff;
+              }
             }
+            a {
+              color: $color_gris;
+            }
+          }
+          .carrito{
+            &:hover{
+              background-color: #ffffff
+            }
+            .botonCarrito {
+              background-color: #ffffff;
+              border: none;
+              margin: 0rem 0.5rem;
+              opacity: 0.8;
+              transition: 0.5s;
+              &:hover {
+                background-color: #ffffff;
+                transform: scale(1.08, 1.08);
+                opacity: 1;
+              }
+              img {
+                width: 2.2rem;
+                margin: 0rem 1rem;
+              }
+            }
+          }
         }
-    }   
+      }
+      .botonHamburguesa {
+        width: 5rem;
+        margin-right: 1rem;
+        padding: 0rem 1rem;
+        background-color: $color_secundario;
+        color: #ffffff;
+      }
+    }
+  }
 }
