@@ -326,8 +326,8 @@ main .comoComprar {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -339,8 +339,8 @@ main .comoComprar {
 main .comoComprar .comoComprar__bloque {
   border: 1px #ffffff solid;
   background-color: #ffffff;
-  width: 20%;
-  height: 58vh;
+  width: 220px;
+  height: 330px;
   margin: 1rem;
   padding: 1rem;
   text-align: center;
@@ -585,13 +585,27 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 }
 
 .main__nosotros .nosotros h1 {
-  padding: 2rem 3rem 0rem 3rem;
+  margin: 0rem 4rem;
+  padding-top: 2rem;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   letter-spacing: 0.3rem;
 }
 
+.main__nosotros section .fotoNosotros {
+  width: 90%;
+  margin: 0.5rem auto;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
+  border-top-right-radius: 20px;
+}
+
+.main__nosotros section .fotoNosotros img {
+  border-top-right-radius: 20px;
+}
+
 .main__nosotros section .conteinerNosotros {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,31 +616,18 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0rem 3rem;
+  margin: 2rem auto 0rem auto;
   padding-bottom: 3rem;
 }
 
-.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoNosotros {
-  width: 100%;
-  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
-          box-shadow: 5px 5px 20px #9d9d9d;
-  border-top-right-radius: 20px;
-}
-
-.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoNosotros img {
-  border-top-right-radius: 20px;
-}
-
 .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
-  height: 55vh;
-  width: 67vw;
+  width: 860px;
   font-family: "Bodoni Moda", serif;
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: 500;
   word-spacing: 0.3rem;
   padding: 3rem;
-  margin: 1.5rem 0rem 0rem 0rem;
   background-image: url(../media/img/fondo2.jpg);
   background-size: cover;
   -webkit-box-shadow: 5px 5px 20px #9d9d9d;
@@ -638,15 +639,14 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   font-weight: 700;
 }
 
-.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid img {
-  height: 55vh;
-  margin: 1.5rem 0rem 0rem 0rem;
-  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
-          box-shadow: 5px 5px 20px #9d9d9d;
-  border-bottom-right-radius: 20px;
+.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid {
+  width: 310px;
 }
 
-.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid img img {
+.main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid img {
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 20px #9d9d9d;
+          box-shadow: 5px 5px 20px #9d9d9d;
   border-bottom-right-radius: 20px;
 }
 
@@ -683,8 +683,8 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -696,8 +696,8 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 .main__productos .comoComprar .comoComprar__bloque {
   border: 1px #ffffff solid;
   background-color: #ffffff;
-  width: 20%;
-  height: 58vh;
+  width: 220px;
+  height: 330px;
   margin: 1rem;
   padding: 1rem;
   text-align: center;
@@ -1005,7 +1005,6 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 }
 
 .mainContacto section .mainContacto__contactanos form fieldset {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1046,6 +1045,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 }
 
 .mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario input {
+  background-color: #ffffff;
   opacity: 0.7;
   border: none;
   width: 100%;
@@ -1065,6 +1065,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 }
 
 .mainContacto section .mainContacto__contactanos form fieldset .bloqueFormulario .motivoConsulta {
+  background-color: #ffffff;
   opacity: 0.7;
   border: none;
   width: 100%;

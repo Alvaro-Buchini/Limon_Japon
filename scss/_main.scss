@@ -321,36 +321,37 @@ main{
 .main__nosotros{
     background-color: $color_principal;
     .nosotros h1{
-        padding: 2rem 3rem 0rem 3rem;
+        margin: 0rem 4rem;
+        padding-top: 2rem;
         font-family: $titulos;
-        font-size: 2rem;
+        font-size: 2.2rem;
         letter-spacing: 0.3rem;
     }
     section{
-        .conteinerNosotros{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            margin: 0rem 3rem;
-            padding-bottom: 3rem;
-            .conteinerNosotros__fotoNosotros{
-                width: 100%;
-                box-shadow: 5px 5px 20px $color_gris;
-                border-top-right-radius: 20px;
+        .fotoNosotros{
+            width: 90%;
+            margin: 0.5rem auto;
+            box-shadow: 5px 5px 20px $color_gris;
+            border-top-right-radius: 20px;
                 img{
                     border-top-right-radius: 20px;
                 }
-            }
+        }
+        .conteinerNosotros{
+            width: 90%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin: 2rem auto 0rem auto;
+            padding-bottom: 3rem;
             .conteinerNosotros__sobreNosotros{
-                height: 55vh;
-                width: 67vw;
+                width: 860px;
                 font-family: $texto;
                 font-size: 1.2rem;
                 line-height: 2rem;
                 font-weight: 500;
                 word-spacing: 0.3rem;
                 padding: 3rem;
-                margin: 1.5rem 0rem 0rem 0rem;
                 background-image: url(../media/img/fondo2.jpg);
                 background-size: cover;
                 box-shadow: 5px 5px 20px $color_gris;
@@ -359,12 +360,11 @@ main{
                     font-weight: 700;
                 }
             }
-            .conteinerNosotros__fotoPolaroid img{
-                height: 55vh;
-                margin: 1.5rem 0rem 0rem 0rem;
-                box-shadow: 5px 5px 20px $color_gris;
-                border-bottom-right-radius: 20px;
+            .conteinerNosotros__fotoPolaroid{
+                width: 310px;
                 img{
+                    width: 100%;
+                    box-shadow: 5px 5px 20px $color_gris;
                     border-bottom-right-radius: 20px;
                 }
             }
@@ -572,7 +572,6 @@ main{
             }
             form{
                 fieldset{
-                    border: 1px solid black;
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: center;
@@ -592,6 +591,7 @@ main{
                             margin-top: 1rem;
                         }
                         input{
+                            background-color: #ffffff;
                             opacity: 0.7;
                             border: none;
                             width: 100%;
@@ -607,6 +607,7 @@ main{
                             }
                         }
                         .motivoConsulta{
+                            background-color: #ffffff;
                             opacity: 0.7;
                             border: none;
                             width: 100%;
