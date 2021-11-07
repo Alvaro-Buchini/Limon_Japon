@@ -107,6 +107,18 @@ main .carrusel video {
   width: 100%;
 }
 
+main .carruselMobile {
+  display: none;
+}
+
+main .carruselMobile img {
+  width: 100%;
+}
+
+main .carruselMobile video {
+  width: 100%;
+}
+
 main .porque__lj {
   width: 100%;
   background-image: url(../media/img/fondo1.jpg);
@@ -142,13 +154,9 @@ main .feedInsta {
   -webkit-box-shadow: 5px 5px 20px #9d9d9d;
           box-shadow: 5px 5px 20px #9d9d9d;
   width: 95%;
+  height: 430px;
   margin: 2rem auto;
   padding: 2rem 0rem;
-}
-
-main .feedInsta .carruselInsta {
-  margin: 0px auto;
-  width: 90%;
 }
 
 main .feedInsta .seguinosInstagram {
@@ -158,7 +166,7 @@ main .feedInsta .seguinosInstagram {
   background-image: url(../media/img/fondo2.jpg);
   background-position: bottom;
   position: absolute;
-  top: 1195px;
+  top: 1100px;
   left: 472px;
 }
 
@@ -656,6 +664,16 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 }
 
 .main__productos .banner__catalogo a img {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 50px #9d9d9d;
+          box-shadow: 0px 5px 50px #9d9d9d;
+}
+
+.main__productos .bannerMobile__catalogo {
+  display: none;
+}
+
+.main__productos .bannerMobile__catalogo a img {
   width: 100%;
   -webkit-box-shadow: 0px 5px 50px #9d9d9d;
           box-shadow: 0px 5px 50px #9d9d9d;
@@ -1240,6 +1258,16 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
           box-shadow: 0px 5px 50px #9d9d9d;
 }
 
+.main__botik .bannerMobile__catalogo {
+  display: none;
+}
+
+.main__botik .bannerMobile__catalogo a img {
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 50px #9d9d9d;
+          box-shadow: 0px 5px 50px #9d9d9d;
+}
+
 .main__botik .comercioAmigo {
   background-image: url(../media/img/fondo3.jpg);
   background-position: center;
@@ -1539,6 +1567,11 @@ footer .conteiner__footer .footerSecciones--404 ul .seccionContacto {
 
 footer .conteiner__footer .footerSecciones--404 ul .seccionAyuda {
   padding-left: 1rem;
+  border-right: 1px solid #ffffff;
+}
+
+footer .conteiner__footer .footerSecciones--404 ul .seccionTerminos {
+  padding-left: 1rem;
 }
 
 footer .conteiner__footer .footerSecciones--404 p {
@@ -1593,8 +1626,38 @@ footer .conteiner__footer .footerRedes .tarjeta__naranja {
   border-radius: 2px;
 }
 
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem 0rem 6rem;
+}
+
+footer .copyright--404 {
+  margin: -1rem 0rem;
+}
+
+footer .copyright--404 img {
+  margin-top: 10px;
+}
+
+footer .copyright img {
+  width: 20px;
+  margin-left: 10px;
+}
+
 footer .copyright p {
-  padding: 2rem 2rem 0rem 6rem;
+  padding-top: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.9rem;
   color: #ffffff;

@@ -13,6 +13,15 @@ main{
             width: 100%;
         }
     }
+    .carruselMobile{
+        display: none;
+        img{
+            width: 100%;
+        }
+        video{
+            width: 100%;
+        }
+    }
     .porque__lj{
         width: 100%;
         background-image: url(../media/img/fondo1.jpg);
@@ -45,12 +54,9 @@ main{
         border-radius: 10px;
         box-shadow: 5px 5px 20px $color_gris;
         width: 95%;
+        height: 430px;
         margin: 2rem auto;
         padding: 2rem 0rem;
-        .carruselInsta{
-            margin: 0px auto;
-            width: 90%;
-        }
         .seguinosInstagram{
             width: 25rem;
             padding: 0.5rem 2rem;
@@ -58,7 +64,7 @@ main{
             background-image: url(../media/img/fondo2.jpg);
             background-position: bottom;
             position: absolute;
-            top: 1195px;
+            top: 1100px;
             left: 472px;
             a{
                 font-family: $titulos;
@@ -377,6 +383,15 @@ main{
     background-image: url(../media/img/fondoMosaico.png);
     background-repeat: repeat;
     .banner__catalogo{
+        a{
+            img{
+                width: 100%;
+                box-shadow: 0px 5px 50px$color_gris;
+            }
+        }
+    }
+    .bannerMobile__catalogo{
+        display: none;
         a{
             img{
                 width: 100%;
@@ -752,6 +767,15 @@ main{
     background-repeat: repeat;
     padding-bottom: 3rem;
     .banner__catalogo{
+        a{
+            img{
+                width: 100%;
+                box-shadow: 0px 5px 50px$color_gris;
+            }
+        }
+    }
+    .bannerMobile__catalogo{
+        display: none;
         a{
             img{
                 width: 100%;

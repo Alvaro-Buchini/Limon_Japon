@@ -47,6 +47,10 @@ footer{
                     }
                     .seccionAyuda{
                         padding-left: 1rem;
+                        border-right: 1px solid #ffffff;
+                    }
+                    .seccionTerminos{
+                        padding-left: 1rem;
                     }
                 }
                 p{
@@ -96,8 +100,23 @@ footer{
         }
     }
     .copyright{
-        p{
-            padding: 2rem 2rem 0rem 6rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1rem 0rem 0rem 6rem;
+        &--404{
+            margin: -1rem 0rem;
+            img{
+                margin-top: 10px;
+            }
+        }
+        img{
+            width: 20px;
+            margin-left: 10px;
+        }
+        p{ 
+            padding-top: 1.5rem;
             font-family: $titulos;
             font-size: 0.9rem;
             color: #ffffff;
