@@ -1,11 +1,11 @@
 // estilo header //
-header {
+header{
   border-bottom: 1px solid #000000;
   position: sticky;
   top: 0px;
-  z-index: 5 !important;
+  z-index: 10 !important;
   nav {
-      height: 70px;
+    height: 70px;
     background-color: #ffffff;
     .conteinterNav {
       display: flex;
@@ -57,12 +57,123 @@ header {
           }
         }
       }
-      .botonHamburguesa {
-        width: 5rem;
-        margin-right: 1rem;
-        padding: 0rem 1rem;
-        background-color: $color_secundario;
+      .botonHamburguesa{ 
+        background-color: #ffffff;
+        margin: 0px 15px 5px 0px; 
+        width: 3.5rem;
         color: #ffffff;
+        border: 1px #ffffff solid;
+        transition: 0.5s ease-in-out;
+        img{
+          width: 45px;    
+        }
+        &:active{
+          transform: scale(1.3,1.3);
+        }
+      }
+    }
+  }
+}
+//media queries//
+
+//Laptop L - W 1440px//
+@media (min-width: 1440px){
+  header{
+    nav{
+      height: 80px;
+    }
+  }
+}
+
+
+//Laptop L - W 1200px//
+@media (max-width: 1200px){
+  header{
+    nav{
+      height: 80px;
+    }
+  }
+}
+
+//Tablet (iPad) - W 1024px//
+@media (max-width: 1024px){
+  header{
+    nav{
+      height: 60px;
+      .conteinterNav{
+        a{
+          img{
+            width: 140px;
+          }
+        }
+        .navbarSecciones{
+          ul{
+            li{
+              font-size: 0.9rem;
+              padding: 0rem 0.7rem;
+            }
+            .carrito{
+              .botonCarrito{
+                img{
+                  width: 2.2rem;
+                  margin: 0rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Tablet (iPad) - W 768px//
+@media (max-width: 768px){
+  header{
+    nav{
+      .conteinterNav{
+        a{
+          img{
+            margin-top: -5px;
+          }
+        }
+        .navbar-collapse{
+          padding: 5px 15px;
+          width: 180px;
+          z-index: 5;
+          position: absolute;
+          right: 0px;
+          top: 61px;
+          background-color: $color_gris;
+          border-bottom-left-radius: 15px;
+          box-shadow: 0px 5px 15px #000000;
+          opacity: 0.9;
+          ul{
+            padding-right: 10px;
+            text-align: right;
+            line-height: 30px;
+            li{
+              padding: 5px;
+              border-left: none;
+              border-bottom: 1px solid #ffffff;
+              a{
+                color: #ffffff;
+              }
+            }
+            .carrito{
+              border-bottom: none;
+              .botonCarrito{
+                padding: 5px 0px;
+                background-color: $color_gris;
+                img{
+                  background-color: $color_gris;
+                  content: url(../media/img/carrito3.png);
+                  width: 40px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

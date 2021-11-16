@@ -11,7 +11,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 5 !important;
+  z-index: 10 !important;
 }
 
 header nav {
@@ -83,11 +83,95 @@ header nav .conteinterNav .navbarSecciones ul .carrito .botonCarrito img {
 }
 
 header nav .conteinterNav .botonHamburguesa {
-  width: 5rem;
-  margin-right: 1rem;
-  padding: 0rem 1rem;
-  background-color: #f8f0df;
+  background-color: #ffffff;
+  margin: 0px 15px 5px 0px;
+  width: 3.5rem;
   color: #ffffff;
+  border: 1px #ffffff solid;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+header nav .conteinterNav .botonHamburguesa img {
+  width: 45px;
+}
+
+header nav .conteinterNav .botonHamburguesa:active {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+}
+
+@media (min-width: 1440px) {
+  header nav {
+    height: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  header nav {
+    height: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header nav {
+    height: 60px;
+  }
+  header nav .conteinterNav a img {
+    width: 140px;
+  }
+  header nav .conteinterNav .navbarSecciones ul li {
+    font-size: 0.9rem;
+    padding: 0rem 0.7rem;
+  }
+  header nav .conteinterNav .navbarSecciones ul .carrito .botonCarrito img {
+    width: 2.2rem;
+    margin: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav .conteinterNav a img {
+    margin-top: -5px;
+  }
+  header nav .conteinterNav .navbar-collapse {
+    padding: 5px 15px;
+    width: 180px;
+    z-index: 5;
+    position: absolute;
+    right: 0px;
+    top: 61px;
+    background-color: #9d9d9d;
+    border-bottom-left-radius: 15px;
+    -webkit-box-shadow: 0px 5px 15px #000000;
+            box-shadow: 0px 5px 15px #000000;
+    opacity: 0.9;
+  }
+  header nav .conteinterNav .navbar-collapse ul {
+    padding-right: 10px;
+    text-align: right;
+    line-height: 30px;
+  }
+  header nav .conteinterNav .navbar-collapse ul li {
+    padding: 5px;
+    border-left: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  header nav .conteinterNav .navbar-collapse ul li a {
+    color: #ffffff;
+  }
+  header nav .conteinterNav .navbar-collapse ul .carrito {
+    border-bottom: none;
+  }
+  header nav .conteinterNav .navbar-collapse ul .carrito .botonCarrito {
+    padding: 5px 0px;
+    background-color: #9d9d9d;
+  }
+  header nav .conteinterNav .navbar-collapse ul .carrito .botonCarrito img {
+    background-color: #9d9d9d;
+    content: url(../media/img/carrito3.png);
+    width: 40px;
+  }
 }
 
 body {
@@ -167,7 +251,7 @@ main .feedInsta .seguinosInstagram {
   background-position: bottom;
   position: absolute;
   top: 1100px;
-  left: 472px;
+  left: 480px;
 }
 
 main .feedInsta .seguinosInstagram a {
@@ -347,7 +431,7 @@ main .comoComprar {
 main .comoComprar .comoComprar__bloque {
   border: 1px #ffffff solid;
   background-color: #ffffff;
-  width: 220px;
+  width: 225px;
   height: 330px;
   margin: 1rem;
   padding: 1rem;
@@ -393,7 +477,7 @@ main .comoComprar .comoComprar__bloque span {
 main .botonWhatsapp img {
   width: 70px;
   position: fixed;
-  top: 70%;
+  top: 440px;
   right: -13px;
   z-index: 3 !important;
   -webkit-transition: 0.5s;
@@ -409,7 +493,7 @@ main .botonWhatsapp img:hover {
 main .botonFlechaTop img {
   width: 140px;
   position: fixed;
-  top: 69%;
+  top: 433px;
   left: -85px;
   z-index: 3 !important;
   -webkit-transition: 0.5s;
@@ -425,7 +509,7 @@ main .botonFlechaTop img:hover {
 main .botonSoporte img {
   width: 140px;
   position: fixed;
-  top: 81%;
+  top: 505px;
   right: -82px;
   z-index: 3 !important;
   -webkit-transition: 0.5s;
@@ -461,9 +545,9 @@ main .offcanvas__carrito .body__carrito {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .offcanvas__carrito .body__carrito .misProductos__carrito {
@@ -629,7 +713,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 }
 
 .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
-  width: 860px;
+  width: 880px;
   font-family: "Bodoni Moda", serif;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -714,7 +798,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 .main__productos .comoComprar .comoComprar__bloque {
   border: 1px #ffffff solid;
   background-color: #ffffff;
-  width: 220px;
+  width: 225px;
   height: 330px;
   margin: 1rem;
   padding: 1rem;
@@ -1485,6 +1569,973 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   width: 550px;
 }
 
+@media (min-width: 1440px) {
+  main .offcanvas__carrito .body__carrito {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .offcanvas__carrito .body__carrito .producto__carrito .detalles__productos label {
+    padding-bottom: 1rem;
+  }
+  main .feedInsta .seguinosInstagram {
+    top: 1130px;
+    left: 520px;
+  }
+  main .comoComprar {
+    padding: 0rem 1rem 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 245px;
+  }
+  main .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  main .botonWhatsapp img {
+    top: 490px;
+  }
+  main .botonSoporte img {
+    top: 555px;
+  }
+  main .botonFlechaTop img {
+    top: 483px;
+  }
+  .main__nosotros .nosotros h1 {
+    margin: 0rem 4.5rem;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
+    width: 910px;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid {
+    width: 350px;
+  }
+  .main__productos .comoComprar {
+    padding: 0rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 240px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    height: 58vh;
+  }
+  .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
+    width: 24rem;
+  }
+  .body404 .main404 {
+    margin: 3.3rem auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  main .feedInsta {
+    width: 95%;
+    padding: 2rem 4rem;
+  }
+  main .feedInsta .seguinosInstagram {
+    top: 1075px;
+    left: 440px;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria {
+    width: 14rem;
+    margin: 1rem;
+  }
+  main .comoComprar {
+    padding: 0.5rem 1rem 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 215px;
+  }
+  main .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
+    width: 780px;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid {
+    width: 330px;
+  }
+  .main__productos .comoComprar {
+    padding: 0.5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 210px;
+    height: 340px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas--yoga {
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
+    width: 13.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .offcanvas__carrito .body__carrito {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .offcanvas__carrito .body__carrito .producto__carrito .detalles__productos label {
+    padding-bottom: 1rem;
+  }
+  main .feedInsta {
+    width: 95%;
+    padding: 2rem 4rem;
+  }
+  main .feedInsta .seguinosInstagram {
+    top: 1050px;
+    left: 400px;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria {
+    width: 14rem;
+    margin: 1rem;
+  }
+  main .comoComprar {
+    padding: 0.5rem 1rem 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 200px;
+  }
+  main .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__nosotros .nosotros h1 {
+    margin: 0rem 4rem;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
+    width: 715px;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid {
+    width: 330px;
+  }
+  .main__productos .comoComprar {
+    padding: 0.5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 190px;
+    height: 360px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    height: 58vh;
+  }
+  .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
+    width: 18rem;
+  }
+  .body404 .main404 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .body404 .main404 .info404 {
+    margin-top: 1.5rem;
+  }
+  .body404 .main404 .info404 .titulo404 {
+    font-size: 6rem;
+  }
+  .body404 .main404 .info404 h2 {
+    font-size: 3rem;
+    margin-top: -1.5rem;
+  }
+  .body404 .main404 img {
+    width: 430px;
+  }
+}
+
+@media (max-width: 1024px) {
+  main .offcanvas__carrito {
+    width: 50%;
+  }
+  main .feedInsta {
+    height: 360px;
+    padding: 1rem 2rem;
+  }
+  main .feedInsta .seguinosInstagram {
+    top: 965px;
+    left: 312px;
+  }
+  main .seccionProductos .conteinerCategorias {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria {
+    width: 12rem;
+    margin: 0.7rem;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria ul li {
+    font-size: 0.9rem;
+  }
+  main .comoComprar {
+    padding: 0.5rem 1rem 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 165px;
+    height: 385px;
+  }
+  main .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 40px;
+  }
+  main .botonWhatsapp img {
+    width: 65px;
+  }
+  main .botonSoporte img {
+    width: 130px;
+    right: -77px;
+  }
+  main .botonFlechaTop img {
+    width: 130px;
+    left: -77px;
+  }
+  .main__nosotros .nosotros h1 {
+    margin: 0rem 3.5rem;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
+    width: 610px;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    padding: 2rem;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid {
+    width: 280px;
+  }
+  .main__productos .comoComprar {
+    padding: 0.5rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 160px;
+    height: 425px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    height: 75vh;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
+    line-height: 2.5rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 1.9rem;
+            column-gap: 1.9rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
+    height: 16vh;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto h3 {
+    font-size: 1rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad label {
+    font-size: 0.8rem;
+  }
+  .main__botik .comercioAmigo h1 {
+    font-size: 2rem;
+  }
+  .main__botik .comercioAmigo h1 img {
+    width: 170px;
+  }
+  .main__botik .comercioAmigo h2 {
+    font-size: 1.3rem;
+  }
+  .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
+    width: 24rem;
+  }
+  .body404 .main404 .info404 {
+    margin-top: 1rem;
+  }
+  .body404 .main404 img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  main .offcanvas__carrito {
+    width: 60%;
+  }
+  main .offcanvas__carrito .body__carrito {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main .feedInsta {
+    width: 90%;
+    height: 300px;
+    padding: 0.5rem 2rem;
+  }
+  main .feedInsta .seguinosInstagram {
+    top: 855px;
+    left: 185px;
+  }
+  main .seccionProductos {
+    width: 90%;
+  }
+  main .seccionProductos .conteinerCategorias {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria {
+    width: 15rem;
+    margin: 1rem;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria ul li {
+    font-size: 0.9rem;
+  }
+  main .comoComprar_titulo {
+    margin: 1.5rem 2.3rem 0rem 2.3rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 2.3rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    background-color: #9d9d9d;
+    opacity: 0.7;
+    font-family: "Josefin Sans", sans-serif;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 1.8rem;
+  }
+  main .comoComprar {
+    padding: 0.5rem 1.3rem 2rem 1.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    padding: 0.1rem 2rem;
+    width: 700px;
+    height: 200px;
+  }
+  main .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 50px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 0px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  main .botonFlechaTop img {
+    top: 880px;
+  }
+  main .botonWhatsapp img {
+    top: 880px;
+  }
+  main .botonSoporte img {
+    top: 945px;
+  }
+  .main__nosotros .nosotros h1 {
+    margin: 0rem 2.5rem;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    padding: 2rem;
+    border-bottom-right-radius: 20px;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__fotoPolaroid {
+    display: none;
+  }
+  .main__botik .comercioAmigo h1 {
+    font-size: 1.8rem;
+  }
+  .main__botik .comercioAmigo h1 img {
+    width: 170px;
+  }
+  .main__botik .comercioAmigo h2 {
+    font-size: 1rem;
+  }
+  .main__botik .comercioAmigo p {
+    font-size: 1rem;
+  }
+  .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
+    width: 17rem;
+    opacity: 0.8;
+  }
+  .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos p {
+    font-size: 1rem;
+  }
+  .mainContacto .mainContacto__contactanos p {
+    padding: 0rem 7.5rem;
+    font-size: 1rem;
+  }
+  .body404 .main404 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body404 .main404 .info404 {
+    margin-top: 2rem;
+  }
+  .body404 .main404 .info404 .titulo404 {
+    font-size: 8rem;
+  }
+  .body404 .main404 .info404 h2 {
+    font-size: 4rem;
+  }
+  .body404 .main404 img {
+    margin-left: -100px;
+    width: 550px;
+  }
+  .main__productos h1 {
+    font-size: 1.5rem;
+  }
+  .main__productos .comoComprar {
+    padding: 0.5rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    width: 120px;
+    height: 390px;
+    padding: 0rem 0.5rem;
+    margin: 0.5rem 0rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-left-radius: 0px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 40px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-size: 0.9rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-size: 1rem;
+  }
+  .main__productos .conteiner__productos {
+    margin: 1rem 3rem 0rem 3rem;
+    -ms-grid-columns: 25% 75%;
+        grid-template-columns: 25% 75%;
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    height: 36vh;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
+    line-height: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul a .menuProductos__li {
+    padding-left: 0.5rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas--yoga {
+    -ms-flex-item-align: inherit;
+        -ms-grid-row-align: inherit;
+        align-self: inherit;
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
+    width: 220px;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
+    height: 8vh;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto h3 {
+    font-size: 1rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad label {
+    font-size: 0.8rem;
+  }
+}
+
 footer {
   background-color: #9d9d9d;
   padding: 1rem;
@@ -1661,4 +2712,76 @@ footer .copyright p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 0.9rem;
   color: #ffffff;
+}
+
+.footer_404 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  footer .conteiner__footer--404 {
+    margin: -1.5rem 0rem 0rem 0rem;
+  }
+  footer .conteiner__footer p {
+    font-size: 0.8rem;
+  }
+  footer .conteiner__footer .footerSecciones {
+    padding: 1rem 1.5rem;
+  }
+  footer .conteiner__footer .footerRedes a img {
+    width: 1.7rem;
+  }
+  footer .conteiner__footer .footerRedes img {
+    width: 2.3rem;
+  }
+  footer .copyright {
+    margin: 0.5rem 0rem 0rem 2.5rem;
+  }
+  footer .copyright--404 {
+    margin: -1rem 0rem -2rem 0rem;
+  }
+  footer .copyright--404 img {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .conteiner__footer {
+    padding: 1rem 1rem;
+  }
+  footer .conteiner__footer--404 {
+    margin-top: -1rem;
+  }
+  footer .conteiner__footer ul li {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+  }
+  footer .conteiner__footer .footerSecciones {
+    padding: 1rem 1.5rem 0rem 0.5rem;
+  }
+  footer .conteiner__footer .footerContacto {
+    padding: 1rem 1.5rem 0rem 2rem;
+  }
+  footer .conteiner__footer .footerRedes {
+    padding: 1rem 0rem 0rem 2rem;
+  }
+  footer .conteiner__footer .footerRedes input {
+    width: 9rem;
+    padding-left: 0.1rem;
+    font-size: 0.8rem;
+  }
+  footer .conteiner__footer .footerRedes .botonSuscripcion {
+    width: 4rem;
+    font-size: 0.7rem;
+    padding-left: 0.2rem;
+  }
+  footer .copyright {
+    margin: 0rem 0rem 1rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  footer .copyright--404 {
+    margin: -1rem 0rem 0rem 0rem;
+  }
 }

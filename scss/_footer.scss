@@ -123,3 +123,90 @@ footer{
         }
     }
 }
+.footer_404{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+//media queries//
+
+//Tablet (iPad) - W 1024px//
+@media (max-width: 1024px){
+    footer{
+        .conteiner__footer{
+            &--404{
+                margin: -1.5rem 0rem 0rem 0rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            .footerSecciones{
+                padding: 1rem 1.5rem;
+            }
+            .footerRedes{
+                a{
+                    img{
+                        width: 1.7rem;
+                    }
+                }
+                img{
+                    width: 2.3rem;
+                }
+            }
+        }
+        .copyright{
+            margin: 0.5rem 0rem 0rem 2.5rem;
+            &--404{
+                margin: -1rem 0rem -2rem 0rem;
+                img{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+//Tablet (iPad) - W 768px//
+@media (max-width: 768px){
+    footer{
+        .conteiner__footer{
+            padding: 1rem 1rem;
+            &--404{
+                margin-top: -1rem;
+            }
+            ul{
+                li{
+                    font-size: 0.8rem;
+                    line-height: 1.7rem;
+                }
+            }
+            .footerSecciones{
+                padding: 1rem 1.5rem 0rem 0.5rem;
+            }
+            .footerContacto{
+                padding: 1rem 1.5rem 0rem 2rem;
+            }
+            .footerRedes{
+                padding: 1rem 0rem 0rem 2rem;
+                input{
+                    width: 9rem;
+                    padding-left: 0.1rem;
+                    font-size: 0.8rem;
+                }
+                .botonSuscripcion{
+                    width: 4rem;
+                    font-size: 0.7rem;
+                    padding-left: 0.2rem;
+                }
+            }
+        }
+        .copyright{
+            margin: 0rem 0rem 1rem 1.5rem;
+            font-size: 0.8rem;
+            &--404{
+                margin: -1rem 0rem 0rem 0rem;
+            }
+        }
+    }
+}
+
