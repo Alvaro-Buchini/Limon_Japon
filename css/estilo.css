@@ -2934,7 +2934,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 425px) and (max-width: 599px) {
   main .offcanvas__carrito {
     width: 90%;
   }
@@ -3419,7 +3419,7 @@ footer .copyright p {
   }
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 599px) {
   footer .conteiner__footer {
     padding: 0rem 2rem;
     -webkit-box-orient: vertical;

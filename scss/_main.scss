@@ -1803,8 +1803,8 @@ main{
     }
 }
 
-//Mobile L - W 425//
-@media (max-width: 425px){
+//Mobile L - W 425 & W-max 599px//
+@media (max-width: 425px) and (max-width: 599px){
     main{
         .offcanvas__carrito{
             width: 90%;

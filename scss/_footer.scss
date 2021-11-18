@@ -262,7 +262,7 @@ footer{
 }
 
 //Mobile L - W 425//
-@media (max-width: 425px){
+@media (min-width: 425px) and (max-width: 599px){
     footer{
         .conteiner__footer{
             padding: 0rem 2rem;
