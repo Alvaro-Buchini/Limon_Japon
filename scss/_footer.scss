@@ -265,6 +265,9 @@ footer{
 @media (max-width: 425px){
     footer{
         .conteiner__footer{
+            padding: 0rem 2rem;
+            flex-flow: column wrap;
+            justify-content: center;
             &--404{
                 justify-content: space-around;
                 align-content: center;
@@ -272,30 +275,46 @@ footer{
                 padding: 0rem;
             }
             .footerSecciones{
-                padding: 0.5rem;
+                text-align: center;
+                padding: 0.5rem 0rem 1rem 0rem;
                 margin: 0rem;
+                border-bottom: 1px solid #ffffff;
                 &--404{
-                    padding: 0rem 0.5rem;
+                    padding: 0rem;
                     margin: 0rem auto;
+                    border-bottom: none;
                 }
             }
             .footerContacto{
-                padding: 0.5rem 0.5rem 0.5rem 1rem;
+                text-align: center;
+                padding: 1rem 0rem 1rem 0rem;
                 margin: 0rem;
+                border-left: none;
+                border-bottom: 1px solid #ffffff;
             }
             .footerRedes{
-                margin: 0.5rem auto;
-                padding: 1rem 1rem 0rem 1rem;
+                margin: 0rem;
+                padding: 1rem 0rem 1rem 0rem;
+                input{
+                    width: 10rem;
+                }
             }
         }
         .copyright{
-            margin: 0rem 3rem;
+            margin: 0rem 2rem;
             &--404{
-                margin: 0rem auto;
+                margin: 0.5rem auto;
                 text-align: left;
+                p{
+                    padding-top: 0rem;
+                    font-size: 0.7rem;
+                }
+                img{
+                    margin: 0px 10px 0px 0px;
+                }
             }
             img{
-                margin-left: 10px;
+                margin-left: 5px;
             }
         }
     }

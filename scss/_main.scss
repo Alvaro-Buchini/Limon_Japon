@@ -1810,6 +1810,16 @@ main{
             width: 90%;
             .body__carrito{
                 .producto__carrito{
+                    img{
+                        width: 75px;
+                    }
+                    .detalles__producto{
+                        width: 16rem;
+                        padding: 0rem 0.5rem;
+                        span{
+                            font-size: 0.9rem;
+                        }
+                    }
                     .boton__eliminarProducto{
                         .precio__producto{
                             font-size: 0.7rem;
@@ -1849,7 +1859,7 @@ main{
         .comoComprar{
             width: 90%;
             .comoComprar__bloque{
-                height: 220px;
+                height: 230px;
                 padding: 0.1rem 1rem;
             }
         }
@@ -1945,16 +1955,23 @@ main{
     .mainContacto{
         section{
             .mainContacto__contactanos{
-                padding: 2rem 1rem;
+                padding: 2rem 10px;
                 h1{
                     font-size: 1.5rem;
                 }
                 p{
-                    padding: 0rem 0.5rem;
+                    padding: 0rem 10px;
                     font-size: 1rem;
                 }
             }
         }  
+    }
+    .main__botik{
+        .comercioAmigo{
+            width: 90%;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
     }
     .main__productos{
         h1{
@@ -1990,11 +2007,13 @@ main{
             grid-template-areas: 
             "categorias menuProductos";
             .menuProductos{
+                width: 100%;
                 z-index: 1;
                 height: 470px;
                 padding: 0.2rem 0.5rem;
+                border: none;
                 .menuProductos__ul{
-                    font-size: 11px;
+                    font-size: 10px;
                     a{
                         width: 100%;
                     }
