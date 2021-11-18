@@ -210,3 +210,93 @@ footer{
     }
 }
 
+//Tablet (Pequeña) - W 600px//
+@media (max-width: 600px){
+    footer{
+        .conteiner__footer{
+            padding: 0.5rem 1rem;
+            justify-content: space-around;
+            &--404{
+                padding: 0rem 0rem;
+                margin: 0rem;
+                margin-bottom: 0rem;
+            }
+            .footerSecciones{
+                text-align: right;
+                padding: 1rem 1rem;
+                margin-right: -7rem;
+                &--404{
+                    margin: 0rem auto;
+                    ul{
+                        margin: 0rem auto;
+                    }
+                }
+            }
+            .footerContacto{
+                border-right: none;
+            }
+            .footerRedes{
+                text-align: center;
+                padding: 1.5rem 2rem 0rem 1rem;
+                &--404{
+                    margin: 0rem 0rem 1rem 0rem;
+                    a{
+                        img{
+                            margin-top: -1rem;
+                            width: 1.5rem;
+                        }
+                    }
+                }
+                input{
+                    width: 12rem;
+                }
+            }
+        }
+        .copyright{
+            margin: 0rem 0rem 1rem 2rem;
+            &--404{
+                margin: -1rem 0rem 0rem 0rem;
+            }
+        }
+    }
+}
+
+//Mobile L - W 425//
+@media (max-width: 425px){
+    footer{
+        .conteiner__footer{
+            &--404{
+                justify-content: space-around;
+                align-content: center;
+                margin: 0rem auto;
+                padding: 0rem;
+            }
+            .footerSecciones{
+                padding: 0.5rem;
+                margin: 0rem;
+                &--404{
+                    padding: 0rem 0.5rem;
+                    margin: 0rem auto;
+                }
+            }
+            .footerContacto{
+                padding: 0.5rem 0.5rem 0.5rem 1rem;
+                margin: 0rem;
+            }
+            .footerRedes{
+                margin: 0.5rem auto;
+                padding: 1rem 1rem 0rem 1rem;
+            }
+        }
+        .copyright{
+            margin: 0rem 3rem;
+            &--404{
+                margin: 0rem auto;
+                text-align: left;
+            }
+            img{
+                margin-left: 10px;
+            }
+        }
+    }
+}

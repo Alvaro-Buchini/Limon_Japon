@@ -109,7 +109,7 @@ header nav .conteinterNav .botonHamburguesa:active {
 
 @media (max-width: 1200px) {
   header nav {
-    height: 80px;
+    height: 81px;
   }
 }
 
@@ -171,6 +171,19 @@ header nav .conteinterNav .botonHamburguesa:active {
     background-color: #9d9d9d;
     content: url(../media/img/carrito3.png);
     width: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav {
+    height: 71px;
+  }
+  header nav .conteinterNav a img {
+    margin-top: 0px;
+  }
+  header nav .conteinterNav .navbar-collapse {
+    right: 0px;
+    top: 72px;
   }
 }
 
@@ -1713,7 +1726,11 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     font-weight: bolder;
   }
   .main__productos .conteiner__productos .menuProductos {
-    height: 58vh;
+    height: 62vh;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas--yoga {
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
   }
   .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
     width: 24rem;
@@ -1878,7 +1895,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     padding: 2rem 4rem;
   }
   main .feedInsta .seguinosInstagram {
-    top: 1050px;
+    top: 1060px;
     left: 400px;
   }
   main .seccionProductos .conteinerCategorias .tarjetaCategoria {
@@ -2008,7 +2025,20 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     font-weight: bolder;
   }
   .main__productos .conteiner__productos .menuProductos {
-    height: 58vh;
+    height: 78vh;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-column-gap: 65px;
+            column-gap: 65px;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
+    width: 15rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
+    height: 16vh;
   }
   .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
     width: 18rem;
@@ -2198,7 +2228,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     font-weight: bolder;
   }
   .main__productos .conteiner__productos .menuProductos {
-    height: 75vh;
+    height: 58vh;
   }
   .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
     line-height: 2.5rem;
@@ -2207,8 +2237,11 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-column-gap: 1.9rem;
-            column-gap: 1.9rem;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
+    width: 13.5rem;
   }
   .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
     height: 16vh;
@@ -2232,9 +2265,10 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     width: 24rem;
   }
   .body404 .main404 .info404 {
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
   .body404 .main404 img {
+    margin-top: 5rem;
     width: 400px;
   }
 }
@@ -2418,6 +2452,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     font-size: 4rem;
   }
   .body404 .main404 img {
+    margin-top: 1rem;
     margin-left: -100px;
     width: 550px;
   }
@@ -2533,6 +2568,540 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   }
   .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad label {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main .carrusel {
+    display: none;
+  }
+  main .carruselMobile {
+    display: inherit;
+  }
+  main .offcanvas__carrito {
+    width: 70%;
+  }
+  main .offcanvas__carrito .body__carrito .producto__carrito .boton__eliminarProducto .precio__producto {
+    font-size: 0.8rem;
+  }
+  main .feedInsta {
+    width: 93%;
+    height: 250px;
+    padding: 0rem 1rem;
+  }
+  main .feedInsta .seguinosInstagram {
+    top: 955px;
+    left: 100px;
+  }
+  main .seccionProductos {
+    width: 93%;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria {
+    width: 12rem;
+    margin: 1rem;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria ul li {
+    font-size: 0.9rem;
+  }
+  main .comoComprar_titulo {
+    margin: 0rem auto;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 2.3rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    background-color: #9d9d9d;
+    opacity: 0.7;
+    font-family: "Josefin Sans", sans-serif;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 1.8rem;
+    width: 93%;
+  }
+  main .comoComprar {
+    padding: 0.5rem 0rem 2rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 93%;
+    margin: 0rem auto;
+  }
+  main .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    margin: 0.5rem 0rem;
+    padding: 0.1rem 2rem;
+    width: 100%;
+    height: 200px;
+  }
+  main .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  main .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  main .comoComprar .comoComprar__bloque img {
+    width: 50px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 0px;
+  }
+  main .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  main .botonFlechaTop img {
+    top: 542px;
+  }
+  main .botonWhatsapp img {
+    top: 550px;
+  }
+  main .botonSoporte img {
+    top: 615px;
+  }
+  .body404 .main404 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .body404 .main404 .info404 {
+    margin-top: 1rem;
+  }
+  .body404 .main404 .info404 .titulo404 {
+    font-size: 6rem;
+  }
+  .body404 .main404 .info404 h2 {
+    font-size: 3rem;
+  }
+  .body404 .main404 .info404 p {
+    font-size: 1rem;
+  }
+  .body404 .main404 img {
+    margin-left: -4rem;
+    width: 300px;
+  }
+  .main__botik .banner__catalogo {
+    display: none;
+  }
+  .main__botik .bannerMobile__catalogo {
+    display: inline;
+  }
+  .main__botik .comercioAmigo .conteinerSellos .tarjetaSellos {
+    width: 100%;
+  }
+  .mainContacto .mainContacto__contactanos p {
+    padding: 0rem 2.5rem;
+  }
+  .main__productos {
+    padding-bottom: 1rem;
+  }
+  .main__productos .banner__catalogo {
+    display: none;
+  }
+  .main__productos .bannerMobile__catalogo {
+    display: inline;
+  }
+  .main__productos h1 {
+    margin: 2rem auto;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: 2.3rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
+    color: #ffffff;
+    background-color: #9d9d9d;
+    opacity: 0.7;
+    font-family: "Josefin Sans", sans-serif;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 1.8rem;
+    width: 93%;
+    margin-bottom: 0rem;
+  }
+  .main__productos .comoComprar {
+    padding: 0.5rem 0rem 0rem 0rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 93%;
+    margin: 0rem auto;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    border: 1px #ffffff solid;
+    background-color: #ffffff;
+    width: 225px;
+    height: 330px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0.7;
+    margin: 0.5rem 0rem;
+    padding: 0.1rem 2rem;
+    width: 100%;
+    height: 180px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque:hover {
+    opacity: 0.8;
+    border-right: 1px #9d9d9d solid;
+    border-bottom: 1px #9d9d9d solid;
+    background-color: #fefbf3;
+    -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 60px;
+    margin: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-weight: bolder;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueDerecho {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 0px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 40px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-size: 0.9rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-size: 1rem;
+  }
+  .main__productos .conteiner__productos {
+    width: 93%;
+    margin: 1rem auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "menuProductos" "categorias";
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    height: 16.5vh;
+    border-radius: 15px;
+    z-index: 4;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    opacity: 0.9;
+    -webkit-box-shadow: 0px 0px 15px #9d9d9d;
+            box-shadow: 0px 0px 15px #9d9d9d;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-column-gap: 0.5rem;
+            column-gap: 0.5rem;
+    font-size: 12px;
+    text-align: center;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul a {
+    width: 23%;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul a:hover {
+    background-color: #ffffff;
+    color: #9d9d9d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul a .menuProductos__li {
+    padding: 0rem 0.5rem;
+    margin: 0.5rem 0rem;
+    border: 1px solid #9d9d9d;
+    border-radius: 10px;
+    background-color: #9d9d9d;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px #9d9d9d;
+            box-shadow: 0px 0px 10px #9d9d9d;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul a .menuProductos__li:hover {
+    background-color: #ffffff;
+    color: #9d9d9d;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 1px solid #ffffff;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias {
+    width: 100%;
+    padding: 0rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias h2 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 0rem;
+            column-gap: 0rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas--yoga {
+    -ms-flex-item-align: inherit;
+        -ms-grid-row-align: inherit;
+        align-self: inherit;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
+    width: 270px;
+    -webkit-box-shadow: 3px 3px 15px #9d9d9d;
+            box-shadow: 3px 3px 15px #9d9d9d;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
+    height: 10vh;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto h3 {
+    font-size: 1rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .cantidad__variedad label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  main .offcanvas__carrito {
+    width: 90%;
+  }
+  main .offcanvas__carrito .body__carrito .producto__carrito .boton__eliminarProducto .precio__producto {
+    font-size: 0.7rem;
+  }
+  main .feedInsta {
+    display: none;
+  }
+  main .seccionProductos {
+    width: 90%;
+    background-size: auto;
+  }
+  main .seccionProductos .productos p {
+    font-size: 1.3rem;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria {
+    width: 100%;
+    margin: 1rem 0rem;
+    border-radius: 15px;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria h3 {
+    font-size: 1.2rem;
+  }
+  main .seccionProductos .conteinerCategorias .tarjetaCategoria .botonTarjetas {
+    margin-top: 0rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  main .comoComprar_titulo {
+    width: 90%;
+  }
+  main .comoComprar {
+    width: 90%;
+  }
+  main .comoComprar .comoComprar__bloque {
+    height: 220px;
+    padding: 0.1rem 1rem;
+  }
+  main .botonFlechaTop img {
+    width: 100px;
+    top: 79.2%;
+    left: -58px;
+  }
+  main .botonFlechaTop img:hover {
+    left: -48px;
+    left: -58px;
+    opacity: 0.7;
+  }
+  main .botonFlechaTop img:active {
+    left: -48px;
+    opacity: 1;
+  }
+  main .botonWhatsapp img {
+    width: 50px;
+    top: 80%;
+    right: -11px;
+  }
+  main .botonWhatsapp img:hover {
+    right: -1px;
+    right: -11px;
+    opacity: 0.7;
+  }
+  main .botonWhatsapp img:active {
+    right: -1px;
+    opacity: 1;
+  }
+  main .botonSoporte img {
+    width: 105px;
+    top: 87%;
+    right: -65px;
+  }
+  main .botonSoporte img:hover {
+    right: -55px;
+    right: -65px;
+    opacity: 0.7;
+  }
+  main .botonSoporte img:active {
+    right: -55px;
+    opacity: 1;
+  }
+  .main__nosotros .nosotros h1 {
+    font-size: 1.5rem;
+    margin: 0rem 1.5rem;
+  }
+  .main__nosotros section .conteinerNosotros .conteinerNosotros__sobreNosotros {
+    margin-top: -0.5rem;
+  }
+  .body404 .main404 .info404 .titulo404 {
+    font-size: 4rem;
+  }
+  .body404 .main404 .info404 h2 {
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+  .body404 .main404 .info404 p {
+    font-size: 0.8rem;
+    margin: 0rem 0.5rem;
+  }
+  .body404 .main404 .info404 a button {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .body404 .main404 img {
+    margin-left: -4rem;
+    width: 280px;
+  }
+  .mainContacto section .mainContacto__contactanos {
+    padding: 2rem 1rem;
+  }
+  .mainContacto section .mainContacto__contactanos h1 {
+    font-size: 1.5rem;
+  }
+  .mainContacto section .mainContacto__contactanos p {
+    padding: 0rem 0.5rem;
+    font-size: 1rem;
+  }
+  .main__productos h1 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .main__productos .comoComprar {
+    width: 90%;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    margin: 0.5rem 0rem;
+    padding: 0.1rem 0.8rem;
+    width: 100%;
+    height: 180px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque.bloqueIzquierdo {
+    border-bottom-left-radius: 0px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque img {
+    width: 40px;
+  }
+  .main__productos .comoComprar .comoComprar__bloque p {
+    font-size: 0.8rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque span {
+    font-size: 0.9rem;
+  }
+  .main__productos .conteiner__productos {
+    width: 90%;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    margin: 1rem auto;
+        grid-template-areas: "categorias menuProductos";
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    z-index: 1;
+    height: 470px;
+    padding: 0.2rem 0.5rem;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
+    font-size: 11px;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul a {
+    width: 100%;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto {
+    width: 100%;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
+    height: 12vh;
   }
 }
 
@@ -2783,5 +3352,89 @@ footer .copyright p {
   }
   footer .copyright--404 {
     margin: -1rem 0rem 0rem 0rem;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .conteiner__footer {
+    padding: 0.5rem 1rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .conteiner__footer--404 {
+    padding: 0rem 0rem;
+    margin: 0rem;
+    margin-bottom: 0rem;
+  }
+  footer .conteiner__footer .footerSecciones {
+    text-align: right;
+    padding: 1rem 1rem;
+    margin-right: -7rem;
+  }
+  footer .conteiner__footer .footerSecciones--404 {
+    margin: 0rem auto;
+  }
+  footer .conteiner__footer .footerSecciones--404 ul {
+    margin: 0rem auto;
+  }
+  footer .conteiner__footer .footerContacto {
+    border-right: none;
+  }
+  footer .conteiner__footer .footerRedes {
+    text-align: center;
+    padding: 1.5rem 2rem 0rem 1rem;
+  }
+  footer .conteiner__footer .footerRedes--404 {
+    margin: 0rem 0rem 1rem 0rem;
+  }
+  footer .conteiner__footer .footerRedes--404 a img {
+    margin-top: -1rem;
+    width: 1.5rem;
+  }
+  footer .conteiner__footer .footerRedes input {
+    width: 12rem;
+  }
+  footer .copyright {
+    margin: 0rem 0rem 1rem 2rem;
+  }
+  footer .copyright--404 {
+    margin: -1rem 0rem 0rem 0rem;
+  }
+}
+
+@media (max-width: 425px) {
+  footer .conteiner__footer--404 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0rem auto;
+    padding: 0rem;
+  }
+  footer .conteiner__footer .footerSecciones {
+    padding: 0.5rem;
+    margin: 0rem;
+  }
+  footer .conteiner__footer .footerSecciones--404 {
+    padding: 0rem 0.5rem;
+    margin: 0rem auto;
+  }
+  footer .conteiner__footer .footerContacto {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin: 0rem;
+  }
+  footer .conteiner__footer .footerRedes {
+    margin: 0.5rem auto;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  footer .copyright {
+    margin: 0rem 3rem;
+  }
+  footer .copyright--404 {
+    margin: 0rem auto;
+    text-align: left;
+  }
+  footer .copyright img {
+    margin-left: 10px;
   }
 }

@@ -90,7 +90,7 @@ header{
 @media (max-width: 1200px){
   header{
     nav{
-      height: 80px;
+      height: 81px;
     }
   }
 }
@@ -173,6 +173,26 @@ header{
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+//Tablet (Pequeña) - W 600px//
+@media (max-width: 600px){
+  header{
+    nav{
+      height: 71px;
+      .conteinterNav{
+        a{
+          img{
+            margin-top: 0px;
+          }
+        }
+        .navbar-collapse{
+          right: 0px;
+          top: 72px;
         }
       }
     }
