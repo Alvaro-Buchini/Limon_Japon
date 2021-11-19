@@ -3481,3 +3481,69 @@ footer .copyright p {
     margin-left: 5px;
   }
 }
+
+@media (min-width: 320px) and (max-width: 424px) {
+  footer .conteiner__footer {
+    padding: 0rem 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .conteiner__footer--404 {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0rem auto;
+    padding: 0rem;
+  }
+  footer .conteiner__footer .footerSecciones {
+    text-align: center;
+    padding: 0.5rem 0rem 1rem 0rem;
+    margin: 0rem;
+    border-bottom: 1px solid #ffffff;
+  }
+  footer .conteiner__footer .footerSecciones--404 {
+    padding: 0rem;
+    margin: 0rem auto;
+    border-bottom: none;
+  }
+  footer .conteiner__footer .footerContacto {
+    text-align: center;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 0rem;
+    border-left: none;
+    border-bottom: 1px solid #ffffff;
+  }
+  footer .conteiner__footer .footerRedes {
+    margin: 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  footer .conteiner__footer .footerRedes input {
+    width: 10rem;
+  }
+  footer .conteiner__footer .footerRedes .botonSuscripcion {
+    margin-top: 5px;
+  }
+  footer .copyright {
+    margin: 0rem 2rem;
+  }
+  footer .copyright--404 {
+    margin: 0.5rem auto;
+    text-align: left;
+  }
+  footer .copyright--404 p {
+    padding-top: 0rem;
+    font-size: 0.7rem;
+  }
+  footer .copyright--404 img {
+    margin: 0px 10px 0px 0px;
+  }
+  footer .copyright img {
+    margin-left: 5px;
+  }
+}

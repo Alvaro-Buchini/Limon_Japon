@@ -319,3 +319,65 @@ footer{
         }
     }
 }
+
+//Mobile L - W 320//
+@media (min-width: 320px) and (max-width: 424px){
+    footer{
+        .conteiner__footer{
+            padding: 0rem 2rem;
+            flex-flow: column wrap;
+            justify-content: center;
+            &--404{
+                justify-content: space-around;
+                align-content: center;
+                margin: 0rem auto;
+                padding: 0rem;
+            }
+            .footerSecciones{
+                text-align: center;
+                padding: 0.5rem 0rem 1rem 0rem;
+                margin: 0rem;
+                border-bottom: 1px solid #ffffff;
+                &--404{
+                    padding: 0rem;
+                    margin: 0rem auto;
+                    border-bottom: none;
+                }
+            }
+            .footerContacto{
+                text-align: center;
+                padding: 1rem 0rem 1rem 0rem;
+                margin: 0rem;
+                border-left: none;
+                border-bottom: 1px solid #ffffff;
+            }
+            .footerRedes{
+                margin: 0rem;
+                padding: 1rem 0rem 1rem 0rem;
+                input{
+                    width: 10rem;
+                }
+                .botonSuscripcion{
+                    margin-top: 5px;
+                }
+            }
+        }
+        .copyright{
+            margin: 0rem 2rem;
+            &--404{
+                margin: 0.5rem auto;
+                text-align: left;
+                p{
+                    padding-top: 0rem;
+                    font-size: 0.7rem;
+                }
+                img{
+                    margin: 0px 10px 0px 0px;
+                }
+            }
+            img{
+                margin-left: 5px;
+            }
+        }
+    }
+}
