@@ -65,7 +65,7 @@ main{
             background-position: bottom;
             position: absolute;
             top: 1100px;
-            left: 480px;
+            left: 472px;
             a{
                 font-family: $titulos;
                 font-size: 1.2rem;
@@ -165,7 +165,7 @@ main{
         @include comoComprarTitulo(1rem 2rem 0rem 2rem);
     }
     .comoComprar{
-        @include comoComprar (0rem 1rem 2rem 1rem);
+        @include comoComprar (1rem 1rem 2rem 1rem);
         .comoComprar__bloque{
             @include comoComprarBloque;
         }
@@ -402,7 +402,7 @@ main{
         @include comoComprarTitulo(2rem 3rem 0rem 3rem);
     }
     .comoComprar{
-        @include comoComprar (0rem 2rem);
+        @include comoComprar (1rem 2rem);
         .comoComprar__bloque{
             @include comoComprarBloque;
         }
@@ -992,7 +992,7 @@ main{
         }
         .conteiner__productos{
             .menuProductos{
-                height: 62vh;
+                height: 430px;
             }
             .conteiner__categorias{
                 .conteiner__tarjetas{
@@ -1068,6 +1068,9 @@ main{
             }
         }
         .conteiner__productos{
+            .menuProductos{
+                height: 430px;
+            }
             .conteiner__categorias{
                 .conteiner__tarjetas{
                     &--yoga{
@@ -1147,7 +1150,7 @@ main{
         }
         .conteiner__productos{
             .menuProductos{
-                height: 78vh;
+                height: 430px;
             }
             .conteiner__categorias{
                 .conteiner__tarjetas{
@@ -1175,7 +1178,7 @@ main{
     .body404{
         .main404{
             .info404{
-                margin-top: 1.5rem;
+                margin-top: 4rem;
                 .titulo404{
                     font-size: 6rem;
                 }
@@ -1186,6 +1189,7 @@ main{
             }
             align-items: flex-start;
             img{
+                margin-top: 3rem;
                 width: 430px;
             }
         }
@@ -1278,7 +1282,7 @@ main{
         }
         .conteiner__productos{
             .menuProductos{
-                height: 58vh;
+                height: 370px;
                 .menuProductos__ul{
                     line-height: 2.5rem;
                 }
@@ -1510,7 +1514,7 @@ main{
             margin: 1rem 3rem 0rem 3rem;
             grid-template-columns: 25% 75%;
             .menuProductos{
-                height: 36vh;
+                height: 370px;
                 .menuProductos__ul{
                     line-height: 2.5rem;
                     font-size: 0.8rem;
@@ -2030,5 +2034,76 @@ main{
                 }
             }
         }
+    }
+    .toast{
+        width: 280px;
+    }
+}
+
+//Mobile L - W 320 & W-max 424px//
+@media (max-width: 320px) and (max-width: 424px){
+    main{
+        .offcanvas__carrito{
+            width: 100%;
+        }
+    }
+    .body404{
+        .main404{
+            .info404{
+                .titulo404{
+                    font-size: 3rem;
+                }
+                h2{
+                    font-size: 1.5rem;
+                    margin-top: 0rem;
+                }
+            }
+            img{
+                margin-left: -3rem;
+                width: 230px;
+            }
+        }
+    }
+    .main__productos{
+        h1{
+            font-size: 1.2rem;
+        }
+        .comoComprar{
+            .comoComprar__bloque{
+                height: 200px;
+            }
+        }
+        .conteiner__productos{
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+            "menuProductos"
+            "categorias"; 
+            width: 90%;
+            .menuProductos{
+                position: relative;
+                margin: 0rem 0rem 2rem 0rem;
+                top: 0px;
+                .menuProductos__ul{
+                    font-size: 12px;
+                }
+            }
+            .conteiner__categorias{
+                width: 100%;
+                h2{
+                    font-size: 1.5rem;
+                }
+                .conteiner__tarjetas{
+                    .tarjeta__producto{
+                        .conteiner__nombreProducto{
+                            height: 13vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .toast{
+        width: 210px;
     }
 }

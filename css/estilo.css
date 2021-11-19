@@ -264,7 +264,7 @@ main .feedInsta .seguinosInstagram {
   background-position: bottom;
   position: absolute;
   top: 1100px;
-  left: 480px;
+  left: 472px;
 }
 
 main .feedInsta .seguinosInstagram a {
@@ -425,7 +425,7 @@ main .comoComprar_titulo {
 }
 
 main .comoComprar {
-  padding: 0rem 1rem 2rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,7 +444,7 @@ main .comoComprar {
 main .comoComprar .comoComprar__bloque {
   border: 1px #ffffff solid;
   background-color: #ffffff;
-  width: 225px;
+  width: 220px;
   height: 330px;
   margin: 1rem;
   padding: 1rem;
@@ -792,7 +792,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 }
 
 .main__productos .comoComprar {
-  padding: 0rem 2rem;
+  padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -811,7 +811,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
 .main__productos .comoComprar .comoComprar__bloque {
   border: 1px #ffffff solid;
   background-color: #ffffff;
-  width: 225px;
+  width: 220px;
   height: 330px;
   margin: 1rem;
   padding: 1rem;
@@ -1614,7 +1614,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   main .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -1688,7 +1688,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   .main__productos .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -1726,7 +1726,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     font-weight: bolder;
   }
   .main__productos .conteiner__productos .menuProductos {
-    height: 62vh;
+    height: 430px;
   }
   .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas--yoga {
     -webkit-column-gap: 3rem;
@@ -1772,7 +1772,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   main .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -1834,7 +1834,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   .main__productos .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -1871,6 +1871,9 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   }
   .main__productos .comoComprar .comoComprar__bloque span {
     font-weight: bolder;
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    height: 430px;
   }
   .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas--yoga {
     -webkit-column-gap: 1rem;
@@ -1921,7 +1924,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   main .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -1986,7 +1989,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   .main__productos .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -2025,7 +2028,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     font-weight: bolder;
   }
   .main__productos .conteiner__productos .menuProductos {
-    height: 78vh;
+    height: 430px;
   }
   .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas {
     -webkit-box-pack: start;
@@ -2049,7 +2052,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
             align-items: flex-start;
   }
   .body404 .main404 .info404 {
-    margin-top: 1.5rem;
+    margin-top: 4rem;
   }
   .body404 .main404 .info404 .titulo404 {
     font-size: 6rem;
@@ -2059,6 +2062,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     margin-top: -1.5rem;
   }
   .body404 .main404 img {
+    margin-top: 3rem;
     width: 430px;
   }
 }
@@ -2106,7 +2110,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   main .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -2189,7 +2193,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   .main__productos .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -2228,7 +2232,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
     font-weight: bolder;
   }
   .main__productos .conteiner__productos .menuProductos {
-    height: 58vh;
+    height: 370px;
   }
   .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
     line-height: 2.5rem;
@@ -2339,7 +2343,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   main .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -2478,7 +2482,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   .main__productos .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -2536,7 +2540,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
         grid-template-columns: 25% 75%;
   }
   .main__productos .conteiner__productos .menuProductos {
-    height: 36vh;
+    height: 370px;
   }
   .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
     line-height: 2.5rem;
@@ -2640,7 +2644,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   main .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -2782,7 +2786,7 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   .main__productos .comoComprar .comoComprar__bloque {
     border: 1px #ffffff solid;
     background-color: #ffffff;
-    width: 225px;
+    width: 220px;
     height: 330px;
     margin: 1rem;
     padding: 1rem;
@@ -3119,6 +3123,60 @@ main .offcanvas__carrito .body__carrito .continuarCompra:hover {
   }
   .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
     height: 12vh;
+  }
+  .toast {
+    width: 280px;
+  }
+}
+
+@media (max-width: 320px) and (max-width: 424px) {
+  main .offcanvas__carrito {
+    width: 100%;
+  }
+  .body404 .main404 .info404 .titulo404 {
+    font-size: 3rem;
+  }
+  .body404 .main404 .info404 h2 {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+  .body404 .main404 img {
+    margin-left: -3rem;
+    width: 230px;
+  }
+  .main__productos h1 {
+    font-size: 1.2rem;
+  }
+  .main__productos .comoComprar .comoComprar__bloque {
+    height: 200px;
+  }
+  .main__productos .conteiner__productos {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "menuProductos" "categorias";
+    width: 90%;
+  }
+  .main__productos .conteiner__productos .menuProductos {
+    position: relative;
+    margin: 0rem 0rem 2rem 0rem;
+    top: 0px;
+  }
+  .main__productos .conteiner__productos .menuProductos .menuProductos__ul {
+    font-size: 12px;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias {
+    width: 100%;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias h2 {
+    font-size: 1.5rem;
+  }
+  .main__productos .conteiner__productos .conteiner__categorias .conteiner__tarjetas .tarjeta__producto .conteiner__nombreProducto {
+    height: 13vh;
+  }
+  .toast {
+    width: 210px;
   }
 }
 
